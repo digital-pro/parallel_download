@@ -517,9 +517,9 @@ def main(
         voice: str,
         user_id: str = None,
         api_key: str = None,
-        item_id_column: str ='item_id',
         overwrite_input_file_str: str = 'False',
         output_file_path: str = None,
+        item_id_column: str ='item_id',
         rate_limit_per_minute_str: str = '50',
         audio_dir: str = None,
     ):
@@ -532,11 +532,11 @@ def main(
         voice (str): The name of the play.ht voice to use, e.g.: 'es-CO-SalomeNeural'
         user_id (str, optional): The user ID for authentication. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_USER_ID'.
         api_key (str, optional): The api key authenticating our API calls. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_API_KEY'.
-        item_id_column (str, optional): column name in the input file for stable and unique item ID. Defaults to 'item_id'.
         overwrite_input_file_str (str, optional): A boolean string to indicate whether to overwrite the input file. Defaults to 'False'.
-        output_file_path (str, optional): The path for the output CSV files to store the state of our transactions. Defaults to './snapshots_{user_id}/tts_{timestamp}_{user_id}.csv'
+        output_file_path (str, optional): The path for the output CSV files to create and where to store the state of our transactions. Defaults to './snapshots_{user_id}/tts_{timestamp}_{user_id}.csv'
+        item_id_column (str, optional): column name in the input file for stable and unique item ID. Defaults to 'item_id'.
         rate_limit_per_minute (str, optional): The rate limit expected for the endpoint. Defaults to 50.
-        audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files_{lang_code}".
+        audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
     if user_id is None:
         user_id = os.environ['PLAY_DOT_HT_USER_ID']
