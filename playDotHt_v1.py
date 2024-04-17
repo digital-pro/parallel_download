@@ -57,9 +57,6 @@ def convert_tts(transaction: TranscriptionTx, user_id, auth_token) -> Transcript
     Returns:
         TranscriptionTx: The updated transaction object with the transcription ID and status.
     """
-    if transaction.status not in ['pending', 'error']:
-        logging.info(f"convert_tts: skipping transaction={transaction.item_id}, status={transaction.status}")
-        return transaction  # Skip jobs that are already completed or in progress.
     headers = {
         'Authorization': auth_token,
         'X-USER-ID': user_id,
@@ -94,10 +91,7 @@ def check_status(transaction: TranscriptionTx, user_id, auth_token) -> Transcrip
     Returns:
         TranscriptionTx: The updated transaction object with the status and audio URL if the transcription is completed.
     """
-    if transaction.status not in ['in_progress']:
-        logging.info(f"check_status: skipping transaction={transaction.item_id}, status={transaction.status}")
-        return transaction
-    if not transaction.transcription_id:
+    if transaction.transcription_id is None:
         logging.error("check_status: No transcription ID, aborting")
         raise Exception("No transcription ID, aborting")
 
@@ -431,12 +425,31 @@ def download_audio_files(df, destination_folder=None, overwrite=False):
 
 def process_transactions(transactions: List[TranscriptionTx], status_data_store: StatusDataStore, user_id, auth_token, rate_limit_per_minute, audio_dir):
     def process(transaction):
-        transaction = convert_tts(transaction, user_id, auth_token)
-        status_data_store.persist_tx_status(transaction) # persist tx status
-        transaction = check_status(transaction, user_id, auth_token)
-        status_data_store.persist_tx_status(transaction)  # persist tx status
-        transaction = download_audio_files(transaction, audio_dir)
-        status_data_store.persist_tx_status(transaction)  # persist tx status
+
+        if transaction.status not in ['pending', 'error']:
+            logging.debug(f"process: transaction={transaction.item_id}: skip convert, status={transaction.status}")
+        else:
+            transaction = convert_tts(transaction, user_id, auth_token)
+            status_data_store.persist_tx_status(transaction)
+
+        if transaction.status is not 'in_progress':
+            logging.debug(f"process: transaction={transaction.item_id}: skip check_status, status={transaction.status}")
+        else:
+            backoff = 1 # this is arbitrary, 
+            time.sleep(backoff)
+            while transaction.status == 'in_progress':
+                transaction = check_status(transaction, user_id, auth_token)
+                status_data_store.persist_tx_status(transaction)
+                if backoff < 30: # this is arbitrary
+                    backoff *= 2
+                time.sleep(backoff)
+
+        #TODO make detecting need for download more robust
+        if not transaction.status.startswith('https://'):
+            logging.debug(f"process: transaction={transaction.item_id}: skip download, status={transaction.status}")
+        else:
+            transaction = download_audio_files(transaction, audio_dir)
+            status_data_store.persist_tx_status(transaction)
         time.sleep(rate_limit_interval)  #TODO: implement real rate limiting
     
     def download_audio_files(transaction, audio_dir):
@@ -444,20 +457,16 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
             errorMsg = f"download_audio_files: audio_dir does not exist={audio_dir}"
             logging.error(errorMsg)
             raise FileNotFoundError(errorMsg)
-        
-        if not transaction.status.startswith('https://'): # TODO make detecting need for download more robust
-            logging.info(f"download_audio_files: skipping download for item={transaction.item_id}, status={transaction.status}")
-            return transaction
-        else:
-            response = requests.get(transaction.status, stream=True)
-            if response.status_code == 200:
-                audio_file_path = f"{audio_dir}/{transaction.item_id}.mp3"
-                if os.path.exists(audio_file_path):
-                    logging.warning(f"download_audio_files: file already exists={audio_file_path}")
-                else:
-                    with open(audio_file_path, 'wb') as f:
-                        f.write(response.content)
-                return replace(transaction, status=audio_file_path)
+
+        response = requests.get(transaction.status, stream=True)
+        if response.status_code == 200:
+            audio_file_path = f"{audio_dir}/{transaction.item_id}.mp3"
+            if os.path.exists(audio_file_path):
+                logging.warning(f"download_audio_files: file already exists={audio_file_path}")
+            else:
+                with open(audio_file_path, 'wb') as f:
+                    f.write(response.content)
+            return replace(transaction, status=audio_file_path)
 
     rate_limit_interval = 60 / rate_limit_per_minute
     with ThreadPoolExecutor(max_workers=10) as executor:

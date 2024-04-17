@@ -17,6 +17,6 @@ Please refer to the main function docstring in the playDotHt_v1.py file for deta
 for details about optional arguments not mentioned here.
 
 # TODO: avoid reading and writing the entire file and update only the corresponding row
-# TODO: fix the polling # TODO make detecting need for download more robust
+# TODO make detecting need for download more robust
 # TODO: use an argument parser
 # TODO: test override mode
