@@ -1,4 +1,8 @@
 .DS_Store
+
+audio_files/**
+snapshots_*/**
+
 .huskyrc.json
 out
 log.log
