@@ -432,7 +432,7 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
             transaction = convert_tts(transaction, user_id, auth_token)
             status_data_store.persist_tx_status(transaction)
 
-        if transaction.status is not 'in_progress':
+        if transaction.status != 'in_progress':
             logging.debug(f"process: transaction={transaction.item_id}: skip check_status, status={transaction.status}")
         else:
             backoff = 1 # this is arbitrary, 
@@ -496,7 +496,7 @@ def setup_csvmanager_status_store(
                 logging.warning(f"no need to specify output file path when opting to overwrite input file")
         logging.info(f"!!! ATTENTION !!! input csv file will be overwritten")
         # we do not call set_output_file() but opt to overwrite the csv input file instead
-        csv_status_store.set_overwrites_csv_input_file(True)
+        csv_status_store.set_overwrites_csv_input_file()
     else:
         if output_file_path is None: # we need to create an output csv file since none was provided
             timestamp = datetime.now().strftime('%Y%m%d.%H.%M.%S')
