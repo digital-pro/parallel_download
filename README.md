@@ -9,6 +9,13 @@
 > - This project has only been lightly tested and may overwrite your input csv, make sure to use a copy of the file if you care about it
 > - Also, many audio files may be written: make sure you're ok dumping them into the the audio_dir -- by default `./audio_files/{lang_code}/`
 
+
+>[!TIP]
+>TL;DR: If you are ok overriding your input csv file,  
+>you can run the script via the command below for an `es-co` target column and a `es-CO-SalomeNeural`
+>```
+>python playDotHt_v1.py ./path/to/input.csv es-co es-CO-SalomeNeural myUserId myApiKey True"
+>```
 ## Installing script dependencies - environment setup
 
 You will need python installed (python3 may be required, I'm not sure).
