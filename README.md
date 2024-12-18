@@ -99,6 +99,9 @@ If you have elected use a virtual environment, deactivate it via
 deactivate
 ```
 
+## For Google, "beware there be monsters"
+# After following most/all the docs, imports didn't work until I did:
+# python -m pip install google-cloud-texttospeech                                                                       
 ## TODOs
 
 ### TODO: absorb formating tags like `<b>`
