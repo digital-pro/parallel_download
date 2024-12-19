@@ -456,11 +456,13 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
         if not transaction.status.startswith('https://'):
             logging.debug(f"process: transaction={transaction.item_id}: skip download, status={transaction.status}")
         else:
+            # We've gotten a URL so our translation is ready to download
             task_subdir = transaction.item_id.split('_')[0]  # Assuming 'task' is derived from item_id for directory structure
             transaction = download_audio_files(transaction, os.path.join(audio_dir, task_subdir), save_task_audio=save_task_audio)
             status_data_store.persist_tx_status(transaction)
         time.sleep(rate_limit_interval)  # TODO: implement real rate limiting
-    
+
+    # Once we have the URL for the translation, download it to a file system    
     def download_audio_files(transaction, audio_dir):
         if not os.path.exists(audio_dir):
             errorMsg = f"download_audio_files: audio_dir does not exist={audio_dir}"
