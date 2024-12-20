@@ -1,4 +1,5 @@
-import playDotHt_v3
+import playDotHt_v4
+import pandas as pd
 
 """
     To pass to the main function to process the transcription jobs.
@@ -16,16 +17,55 @@ import playDotHt_v3
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
 
+# Retrieve translations.csv from the repo
+# NOTE: If special characters get munged, will need to
+#       arrange for an export/download directly from Crowdin
+#
 # For testing don't co-host with Text Translation repo
 input_file_path = "item_bank_translations.csv"
-# put changes back into the levante-test repo
-lang_code = 'es-ES'
+
+# Raw Github URL for translations uploaded from Crowdin
+webURL = "https://raw.githubusercontent.com/digital-pro/levante-audio/main/translated.csv"
+
+# Turn into dataframe so we can do any needed edits
+# Pandas can now read directly from the web
+# or if we need more control we could use requests
+translationData = pd.read_csv(webURL)
+
+# Current export from Crowdin has columns of
+# identifier -> item_id
+# labels -> task
+# text -> en-US
+
+# Columns that are okay
+# es-CO OK
+# de OK
+
+# TBD: whether we want to write directly to the repo
 #audio_dir = "c:/levante/levante-test/audio_files/{lang_code}/"
 # for debugging
 #audio_dir = "audio_files/"
-voice = 'Conchita'
 
-playDotHt_v3.main(input_file_path = input_file_path, lang_code = lang_code,
+# column edits to match what we need
+translationData = translationData.rename(columns={'identifier': 'item_id'})
+translationData = translationData.rename(columns={'text': 'en'})
+#translationData = translationData.rename(columns={'labels': 'task'})
+
+translationData.to_csv(input_file_path)
+
+# Current play.ht voices for reference
+# es-CO -- es-CO-SalomeNeural
+# de -- VickiNeural
+# en-US -- en-US-AriaNeural
+
+# Hard-coded as a test 
+# should get these as parameters
+voice = 'es-CO-SalomeNeural'
+lang_code = 'es-CO'
+
+# Example call: # python playDotHt_v4.py item-bank-translations.csv 'en' 'en-US-AriaNeural'
+
+playDotHt_v4.main(input_file_path = input_file_path, lang_code = lang_code,
              voice=voice)
 
 # IF we're happy with the output then

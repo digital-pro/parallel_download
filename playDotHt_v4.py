@@ -1,3 +1,8 @@
+# Based on v3
+#
+# Adds support for repo-friendly & bucket-friendly paths
+# Makes paths "Windows friendly"
+
 from abc import abstractmethod
 import sys
 import os
@@ -42,7 +47,8 @@ class TranscriptionTx:
     voice: str
     lang_code: str
     item_id: str
-    labels: str #Currently used for the task name
+    #don't know if we need this in the transaction
+    #labels: str #Currently used for the task name
     text: str
     transcription_id: str = None
     # below are the data we use internally to track the status of the transaction
