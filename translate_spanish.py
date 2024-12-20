@@ -27,3 +27,6 @@ voice = 'Conchita'
 
 playDotHt_v2.main(input_file_path = input_file_path, lang_code = lang_code,
              voice=voice)
+
+# IF we're happy with the output then
+# gsutil rsync -d -r <src> gs://<bucket> 
