@@ -11,6 +11,9 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, replace
 
+#experiment
+import pyht
+
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -550,6 +553,7 @@ def main(
         rate_limit_per_minute (str, optional): The rate limit expected for the endpoint. Defaults to 50.
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
+
     if user_id is None:
         user_id = os.environ['PLAY_DOT_HT_USER_ID']
         if user_id is None:

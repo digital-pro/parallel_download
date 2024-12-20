@@ -460,13 +460,12 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
     
     def download_audio_files(transaction, audio_dir):
         if not os.path.exists(audio_dir):
-            errorMsg = f"download_audio_files: audio_dir does not exist={audio_dir}"
-            logging.error(errorMsg)
-            raise FileNotFoundError(errorMsg)
+            os.mkdir(audio_dir)
+            ###raise FileNotFoundError(errorMsg)
 
         response = requests.get(transaction.status, stream=True)
         if response.status_code == 200:
-            audio_file_path = f"{audio_dir}/{transaction.item_id}.mp3"
+            audio_file_path = os.path.join(audio_dir,transaction.item_id + ".mp3")
             if os.path.exists(audio_file_path):
                 logging.warning(f"download_audio_files: file already exists={audio_file_path}")
             else:
@@ -572,7 +571,7 @@ def main(
 
     # create destination folder for audio files
     if audio_dir is None:
-        audio_dir = f"audio_files/{lang_code}"
+        audio_dir = os.path.join("audio_files",lang_code)
     create_directory(audio_dir)
 
     process_transactions(
