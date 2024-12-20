@@ -1,4 +1,4 @@
-import playDotHt_v2
+import playDotHt_v3
 
 """
     To pass to the main function to process the transcription jobs.
@@ -25,7 +25,7 @@ lang_code = 'es-ES'
 #audio_dir = "audio_files/"
 voice = 'Conchita'
 
-playDotHt_v2.main(input_file_path = input_file_path, lang_code = lang_code,
+playDotHt_v3.main(input_file_path = input_file_path, lang_code = lang_code,
              voice=voice)
 
 # IF we're happy with the output then

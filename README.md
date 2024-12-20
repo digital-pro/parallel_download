@@ -110,3 +110,15 @@ deactivate
 ### TODO: make detecting need for download more robust
 ### TODO: use an argument parser
 ### TODO: avoid reading and writing the entire file and update only the corresponding row
+
+### Desired file structure
+# Example:
+# C:\levante\core-task-assets\math\es\shared\<filename>
+#
+# e.g. <root folder>,<task>,<lang-code>,"shared",<mp3 file name>
+#
+# In v3 <task> directory gets added
+#  os.path.join(audio_dir, task_subdir)
+#   ? still needs <lang-code> & "shared", I think
+#
+# 

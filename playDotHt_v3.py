@@ -404,6 +404,7 @@ class CsvManager(StatusDataStore):
 # DRIVER CODE
 ################################################
 
+"""
 def download_audio_files(df, destination_folder=None, overwrite=False, save_task_audio=None):
     for _, row in df.iterrows():
         task = row['tasks']  # Column used to specify the task
@@ -434,6 +435,7 @@ def download_audio_files(df, destination_folder=None, overwrite=False, save_task
             os.makedirs(destination_folder, exist_ok=True)
             with open(local_file_path, 'wb') as f:
                 f.write(response.content)
+"""
 
 def process_transactions(transactions: List[TranscriptionTx], status_data_store: StatusDataStore, user_id, auth_token, rate_limit_per_minute, audio_dir, save_task_audio=None):
     def process(transaction):
@@ -461,20 +463,23 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
         else:
             # We've gotten a URL so our translation is ready to download
             task_subdir = transaction.item_id.split('_')[0]  # Assuming 'task' is derived from item_id for directory structure
-            transaction = download_audio_files(transaction, os.path.join(audio_dir, task_subdir), save_task_audio=save_task_audio)
+            transaction = download_audio_files(transaction, os.path.join(audio_dir, task_subdir))
             status_data_store.persist_tx_status(transaction)
         time.sleep(rate_limit_interval)  # TODO: implement real rate limiting
 
     # Once we have the URL for the translation, download it to a file system    
-    def download_audio_files(transaction, audio_dir):
+    
+    def download_audio_files(transaction, audio_dir, save_task_dir = None):
         if not os.path.exists(audio_dir):
-            errorMsg = f"download_audio_files: audio_dir does not exist={audio_dir}"
-            logging.error(errorMsg)
-            raise FileNotFoundError(errorMsg)
+            os.mkdir(audio_dir)
+            #errorMsg = f"download_audio_files: audio_dir does not exist={audio_dir}"
+            #logging.error(errorMsg)
+            #raise FileNotFoundError(errorMsg)
 
         response = requests.get(transaction.status, stream=True)
         if response.status_code == 200:
-            audio_file_path = f"{audio_dir}/{transaction.item_id}.mp3"
+            audio_file_path = os.path.join(audio_dir,transaction.item_id+".mp3")
+
             if os.path.exists(audio_file_path):
                 logging.warning(f"download_audio_files: file already exists={audio_file_path}")
             else:
@@ -485,7 +490,7 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
     rate_limit_interval = 60 / rate_limit_per_minute
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.map(process, transactions)
-
+    
 def setup_csvmanager_status_store(
         input_file_path,
         output_file_path,
@@ -516,7 +521,7 @@ def setup_csvmanager_status_store(
             timestamp = datetime.now().strftime('%Y%m%d.%H.%M.%S')
             dir_path = f'./snapshots_{user_id}'
             os.makedirs(dir_path, exist_ok=True)
-            output_filepath = f"{dir_path}/tts_{timestamp}_{user_id}.csv"
+            output_filepath = os.path.join(dir_path,"tts_" + timestamp + "_" +user_id + ".csv")
             logging.info(f"no output file path specified: will create output file as {output_filepath}")
         csv_status_store.set_csv_output_file(output_filepath)
 
@@ -582,7 +587,8 @@ def main(
 
     # create destination folder for audio files
     if audio_dir is None:
-        audio_dir = f"audio_files/{lang_code}"
+        # need to add task name
+        audio_dir = os.path.join("audio_files","lang_code","shared")
     create_directory(audio_dir)
 
     process_transactions(
@@ -598,9 +604,7 @@ def main(
 if __name__ == "__main__":
     main(*sys.argv[1:])
 
-
 # save audio for theory-of-mind:
 # python playDotHt_v3.py item-bank-translations.csv 'en' 'en-US-AriaNeural' --save_task_audio='theory-of-mind'
 # save audio for all tasks (in task-specific subdirectories):
 # python playDotHt_v3.py item-bank-translations.csv 'en' 'en-US-AriaNeural'
-
