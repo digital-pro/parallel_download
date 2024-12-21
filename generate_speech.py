@@ -1,4 +1,4 @@
-import playDotHt_v4
+import playHt_tts
 import pandas as pd
 
 """
@@ -64,8 +64,7 @@ voice = 'es-CO-SalomeNeural'
 lang_code = 'es-CO'
 
 # Example call: # python playDotHt_v4.py item-bank-translations.csv 'en' 'en-US-AriaNeural'
-
-playDotHt_v4.main(input_file_path = input_file_path, lang_code = lang_code,
+playHt_tts.main(input_file_path = input_file_path, lang_code = lang_code,
              voice=voice)
 
 # IF we're happy with the output then

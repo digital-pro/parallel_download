@@ -26,6 +26,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 API_URL = "https://api.play.ht/api/v1/convert"
 STATUS_URL = "https://api.play.ht/api/v1/articleStatus"
 
+# Trying to get save files co-erced into our desired path
+audio_base_dir = "audio_files"
+
 def create_directory(path):
     if not os.path.exists(path):
         os.makedirs(path)
@@ -166,6 +169,7 @@ class CsvManager(StatusDataStore):
         self.lock = threading.Lock()
         self.locked_output_file = None
         self.overwrite_input_file = False
+        self.labels = 'labels' # should probably load this from somewhere 
 
     def set_csv_output_file(self, output_file_name: str):
         """
@@ -288,7 +292,7 @@ class CsvManager(StatusDataStore):
             raise ValueError("extract_transactions: locale and voice not set, aborting")
         
         tx_columns = CsvManager.get_tx_columns(lang_code=self.lang_code, voice=self.voice)
-        required_columns = [self.item_id_column, self.lang_code]
+        required_columns = [self.item_id_column, self.lang_code, self.labels]
         data_frame = CsvManager.__parse_input_file(self.input_file, required_columns, tx_columns)
 
         if data_frame is None:
@@ -301,6 +305,7 @@ class CsvManager(StatusDataStore):
             item_id_column=self.item_id_column,
             lang_code=self.lang_code,
             voice=self.voice,
+            labels=self.labels
             )
         #TODO perhaps log this snapshot to a text file
         return transactions_from_input
@@ -342,10 +347,10 @@ class CsvManager(StatusDataStore):
             )
 
     ## HELPER FUNCTIONS
-    def extract_transactions_from_df(df: pd.DataFrame, item_id_column: str, lang_code: str, voice: str) -> List[TranscriptionTx]:
+    def extract_transactions_from_df(df: pd.DataFrame, item_id_column: str, lang_code: str, voice: str, labels: str) -> List[TranscriptionTx]:
         transactions = []
         for _, row in df.iterrows():
-            transaction = CsvManager.df_row_to_transcription_tx(row=row, item_id_column=item_id_column, lang_code=lang_code, voice=voice)
+            transaction = CsvManager.df_row_to_transcription_tx(row=row, item_id_column=item_id_column, lang_code=lang_code, voice=voice, labels=labels)
             transactions.append(transaction)
         return transactions
         
@@ -472,7 +477,7 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
             # Repo path: core-task-assets\math\de\shared>
             ##? Calc task_dir from label or from item_id??
             audio_file_path = \
-                os.path.join(audio_dir, transaction.labels,
+                os.path.join(audio_base_dir, transaction.labels,
                               transaction.lang_code, "shared")
             # Assuming 'task' is derived from item_id for directory structure
             # task_subdir = transaction.item_id.split('_')[0]
@@ -491,6 +496,10 @@ def process_transactions(transactions: List[TranscriptionTx], status_data_store:
 
         response = requests.get(transaction.status, stream=True)
         if response.status_code == 200:
+            # this is kind of bogus given desired path
+            audio_file_full_dir = os.path.join(audio_dir,transaction)
+            if not os.path.exists(audio_file_full_dir):
+                os.mkdir(audio_file_full_dir)
             audio_file_path = os.path.join(audio_dir,transaction.item_id+".mp3")
 
             if os.path.exists(audio_file_path):
@@ -599,6 +608,9 @@ def main(
     logging.info(f"main: extracted {len(transactions)} transactions, sample={transactions[:3]}")
 
     # create destination folder for audio files
+    # Audio Directory needs to be task/lang_code/shared
+    # So we can't fix it in place now
+    # might need to change on each item!
     if audio_dir is None:
         # need to add task name
         audio_dir = os.path.join("audio_files","lang_code","shared")
