@@ -4,6 +4,7 @@ import os
 import sys
 import pandas as pd
 import requests
+import logging
 from dataclasses import dataclass, replace
 
 
@@ -21,38 +22,6 @@ def create_directory(path):
         os.makedirs(path)
     return path
 
-def convert_tts(user_id, auth_token):
-    """
-    Convert text to speech using the Play.ht API.
-
-    Args:
-        transaction (TranscriptionTx): The transaction object containing the text, voice, and status.
-        user_id (str): The user ID for authentication.
-        auth_token (str): The authentication token.
-
-    Returns:
-        TranscriptionTx: The updated transaction object with the transcription ID and status.
-    """
-    headers = {
-        'Authorization': auth_token,
-        'X-USER-ID': user_id,
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-    data = {
-        "content": [transaction.text],
-        "voice": transaction.voice,
-        "title": "Individual Audio",
-        "trimSilence": True
-    }
-    # logging.debug(f"convert_tts: submitting item={transaction.item_id}")
-    response = requests.post(API_URL, headers=headers, json=data) # see https://docs.play.ht/reference/api-convert-tts-standard-premium-voices
-    # What about success -- code 200?
-    if response.status_code == 201:
-        result = response.json()
-        return replace(transaction, transcription_id=result['transcriptionId'], status='in_progress', resp_body=result)
-    else:
-        return replace(transaction, status='error', resp_body=f'NO RESPONSE (convert), status code={response.status_code}')
 
 
 def main(
@@ -113,17 +82,27 @@ def main(
             'Content-Type': 'application/json'
         }
 
-        # We're assuming all the rows have the same columns
-        translationNeeded = inputData.loc[index, lang_code]  # The name of the column you want to select
         data = {
-            "content" : translationNeeded,
+            # content needs to be an array, even if we only do one at a time
+            "content" : [ourRow[lang_code]],
             "voice": voice,
             "title": "Individual Audio",
             "trimSilence": True
         }
-    response = requests.post(API_URL, headers=headers, json=data) # see https://docs.play.ht/reference/api-convert-tts-standard-premium-voices
+        # see https://docs.play.ht/reference/api-convert-tts-standard-premium-voices
+        response = requests.post(API_URL, headers=headers, json=data) 
 
-
+        if response.status_code == 201:
+            result = response.json()
+            logging.info(f"convert_tts: response for item={ourRow['item_id']}: transcriptionId={result['transcriptionId']}")
+        else:
+            logging.error(f"convert_tts: no response for item={ourRow['item_id']}: status code={response.status_code}")
+            #return (status='error') # , resp_body=f'NO RESPONSE (convert), status code={response.status_code}')
+            continue
+        # at this point the status will either be an URL ('done')
+        # or Pending, in which case we wait a bit
+        headers = {"accept": "application/json"}
+        response = requests.get(STATUS_URL, headers=headers)
 
 
 if __name__ == "__main__":
