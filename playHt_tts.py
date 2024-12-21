@@ -9,7 +9,7 @@ import time
 from dataclasses import dataclass, replace
 
 
-# Constants for API
+# Constants for API, in this case for Play.Ht, maybe
 API_URL = "https://api.play.ht/api/v1/convert"
 STATUS_URL = "https://api.play.ht/api/v1/articleStatus"
 
@@ -49,6 +49,19 @@ def main(
         item_id_column (str, optional): column name in the input file for stable and unique item ID. Defaults to 'item_id'.
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
+    
+    # find the full path for an audio file to write
+    # we want to echo the repo & GCP heirarchy to save re-doing later
+    # e.g. <base>/task/language/shared/<item>.mp3
+    def audio_file_path(task_name, item_name):
+        full_file_folder = \
+            os.path.join(audio_base_dir, task_name,
+            lang_code, "shared")
+        if not os.path.exists(full_file_folder):
+            os.makedirs(full_file_folder, exist_ok=True)
+        full_file_path = os.path.join(full_file_folder, item_name + ".mp3")
+        return full_file_path
+    
 
     if user_id is None:
         user_id = os.environ['PLAY_DOT_HT_USER_ID']
@@ -104,6 +117,7 @@ def main(
         
             # Poll the status until completion
             while True:
+                downloadURL = None # clear each time
                 status_params = {"transcriptionId": transcription_id}
                 status_response = requests.get(STATUS_URL, params=status_params, headers=headers)
                 status_data = status_response.json()
@@ -111,16 +125,27 @@ def main(
                 if status_data["converted"] == True:
                     print("Conversion completed successfully!")
                     print(f"Audio URL: {status_data['audioUrl']}")
-                    break
-                elif status_data["converted"] == "ERROR": # not sure what an error would look like here?
-                    print("Conversion failed.")
-                    break
+                    # set the download URL for retrieval or get it right here?
+                    downloadURL = status_data['audioUrl']
+
+                    # At this point we should have an "audioURL" that we can retrieve
+                    # and then write out to the appropriate directory
+                    audioData = requests.get(downloadURL)
+
+                    # open file for writing
+                    # Download the MP3 file
+                    if audioData.status_code == 200:
+                        with open(audio_file_path(ourRow["labels"], ourRow["item_id"]), "wb") as file:
+                            file.write(audioData.content)
+                            # can we label ourRow in PD as translated?
+                            ourRow["translation_time"] = pd.now()
+                        break
+                    else:
+                        print("Failed to download the MP3 file")
+                        break
                 else:
                     print(f"Conversion in progress. Status: {status_data['converted']}")
-                    time.sleep(5)  # Wait for 5 seconds before checking again
-
-            # At this point we should have an "audioURL" that we can retrieve
-            # and then write out to the appropriate directory
+                    time.sleep(.3)  # Wait before checking again
             
 if __name__ == "__main__":
     main(*sys.argv[1:])

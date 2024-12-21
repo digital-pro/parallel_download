@@ -51,6 +51,14 @@ translationData = translationData.rename(columns={'identifier': 'item_id'})
 translationData = translationData.rename(columns={'text': 'en'})
 #translationData = translationData.rename(columns={'labels': 'task'})
 
+# add a translation time column
+translationData['translation_time'] = None
+
+# We start with a baseline of None, but what if many prompts
+# have already been translated. Can we start from there?
+# That would involve reading in the previous version
+# And looking for None, plus any new prompts in the current file
+
 translationData.to_csv(input_file_path)
 
 # Current play.ht voices for reference
@@ -63,7 +71,11 @@ translationData.to_csv(input_file_path)
 voice = 'es-CO-SalomeNeural'
 lang_code = 'es-CO'
 
-# Example call: # python playDotHt_v4.py item-bank-translations.csv 'en' 'en-US-AriaNeural'
+# options for all re-doing changed sources
+# but also for redoing strings that haven't been translated
+# maybe keep a pd/csv with a "translated" column?
+changed_only = True
+
 playHt_tts.main(input_file_path = input_file_path, lang_code = lang_code,
              voice=voice)
 
