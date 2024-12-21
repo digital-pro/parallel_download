@@ -5,6 +5,7 @@ import sys
 import pandas as pd
 import requests
 import logging
+import time
 from dataclasses import dataclass, replace
 
 
@@ -44,7 +45,6 @@ def main(
         voice (str): The name of the play.ht voice to use, e.g.: 'es-CO-SalomeNeural'
         user_id (str, optional): The user ID for authentication. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_USER_ID'.
         api_key (str, optional): The api key authenticating our API calls. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_API_KEY'.
-        overwrite_input_file_str (str, optional): A boolean string to indicate whether to overwrite the input file. Defaults to 'False'.
         output_file_path (str, optional): The path for the output CSV files to create and where to store the state of our transactions. Defaults to './snapshots_{user_id}/tts_{timestamp}_{user_id}.csv'
         item_id_column (str, optional): column name in the input file for stable and unique item ID. Defaults to 'item_id'.
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
@@ -58,9 +58,6 @@ def main(
         api_key = os.environ['PLAY_DOT_HT_API_KEY']
         if api_key is None:
             raise ValueError("auth_token cannot be None")
-
-    # Can't create destination folder for audio files yet
-    # As we now want them to per task
 
     # basically we want to iterate through rows,
     # specifying the column (language) we want translated.
@@ -99,12 +96,32 @@ def main(
             logging.error(f"convert_tts: no response for item={ourRow['item_id']}: status code={response.status_code}")
             #return (status='error') # , resp_body=f'NO RESPONSE (convert), status code={response.status_code}')
             continue
-        # at this point the status will either be an URL ('done')
-        # or Pending, in which case we wait a bit
-        headers = {"accept": "application/json"}
-        response = requests.get(STATUS_URL, headers=headers)
 
+        json_status = response.json()
+        if "transcriptionId" in json_status:
+            transcription_id = json_status["transcriptionId"]
+            print(f"Conversion initiated. Transcription ID: {transcription_id}")
+        
+            # Poll the status until completion
+            while True:
+                status_params = {"transcriptionId": transcription_id}
+                status_response = requests.get(STATUS_URL, params=status_params, headers=headers)
+                status_data = status_response.json()
 
+                if status_data["converted"] == True:
+                    print("Conversion completed successfully!")
+                    print(f"Audio URL: {status_data['audioUrl']}")
+                    break
+                elif status_data["converted"] == "ERROR": # not sure what an error would look like here?
+                    print("Conversion failed.")
+                    break
+                else:
+                    print(f"Conversion in progress. Status: {status_data['converted']}")
+                    time.sleep(5)  # Wait for 5 seconds before checking again
+
+            # At this point we should have an "audioURL" that we can retrieve
+            # and then write out to the appropriate directory
+            
 if __name__ == "__main__":
     main(*sys.argv[1:])
 
