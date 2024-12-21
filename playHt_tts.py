@@ -104,7 +104,7 @@ def main(
     # build API call
     for index, ourRow in inputData.iterrows():
         # for debugging
-        print(ourRow)
+        #print(ourRow)
 
         headers = {
             'Authorization': api_key,
@@ -120,9 +120,10 @@ def main(
             "voice": voice,
             "title": "Individual Audio",
             "trimSilence": True
-    }
-
+        }
     response = requests.post(API_URL, headers=headers, json=data) # see https://docs.play.ht/reference/api-convert-tts-standard-premium-voices
+
+
 
 
 if __name__ == "__main__":
