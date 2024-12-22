@@ -21,16 +21,6 @@ import urllib
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
 
-# sometimes exports from Excel format add a "Sheet" entry before every row :(
-def remove_sheet_rows(ourData):
-
-        #for row in reader:
-        #    if row and row[0].startswith('Sheet'):
-        #        row[0] = row[0].split(',', 1)[-1]  # Remove 'Sheet' prefix
-        #    writer.writerow(row)
-        #shutil.move(outfile, infile)
-    print("NULL")
-
 # Retrieve translations.csv from the repo
 # NOTE: If special characters get munged, will need to
 #       arrange for an export/download directly from Crowdin
@@ -97,11 +87,6 @@ else:
     masterData.to_csv("translation_master.csv")
     # Create baseline masterData
 
-# Now we have masterData & translationData
-
-
-
-
 # Current play.ht voices for reference
 # es-CO -- es-CO-SalomeNeural
 # de -- VickiNeural
@@ -112,11 +97,11 @@ else:
 voice = 'es-CO-SalomeNeural'
 lang_code = 'es-CO'
 
-# options for all re-doing changed sources
-# but also for redoing strings that haven't been translated
-# maybe keep a pd/csv with a "translated" column?
-changed_only = False
-not_done_only = False # try true:)
+# Now we have masterData & translationData
+# We want to compare the appropriate column to see if we need to generate
+
+# Find differences in the language code column
+diffs = translationData[~translationData[lang_code].isin(masterData[lang_code])]
 
 # should we filter out just the ones we want here
 # or inside the vendor specific code
@@ -128,10 +113,8 @@ not_done_only = False # try true:)
 #   * check audio file for existence for "just new"
 #   * compare the translation column for changes
 
-
 playHt_tts.main(input_file_path = input_file_name, lang_code = lang_code,
-             voice=voice, changed_only = changed_only, 
-             audio_base_dir = audio_base_dir, not_done_only = not_done_only)
+             voice=voice, audio_base_dir = audio_base_dir)
 
 # IF we're happy with the output then
 # gsutil rsync -d -r <src> gs://<bucket> 
