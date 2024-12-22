@@ -28,6 +28,7 @@ import urllib
 # For testing don't co-host with Text Translation repo
 input_file_name = "item_bank_translations.csv"
 diff_file_name = "needed_item_bank_translations.csv"
+master_file_path = "translation_master.csv"
 
 # Raw Github URL for translations uploaded from Crowdin
 webURL = "https://raw.githubusercontent.com/digital-pro/levante-audio/main/translated.csv"
@@ -76,7 +77,7 @@ translationData.to_csv(input_file_name)
 
 # There is/may also be an existing .csv file (translation_master.csv)
 if os.path.exists("translation_master.csv"):
-    masterData = pd.read_csv("translation_master.csv")
+    masterData = pd.read_csv(master_file_path)
 else:
     # Create a "null state" translation status file
     # so that we know what needs to be generated
@@ -84,7 +85,7 @@ else:
     masterData['en'] = None
     masterData['es-CO'] = None
     masterData['de'] = None
-    masterData.to_csv("translation_master.csv")
+    masterData.to_csv(master_file_path)
     # Create baseline masterData
 
 # Current play.ht voices for reference
@@ -102,19 +103,10 @@ lang_code = 'es-CO'
 
 # Find differences in the language code column
 diffs = translationData[~translationData[lang_code].isin(masterData[lang_code])]
+diffs.to_csv(diff_file_name)
 
-# should we filter out just the ones we want here
-# or inside the vendor specific code
-# seems like here is the right idea
-
-# we have our input.csv and our "master.csv" -- once it is created
-# simple dropduplicates doesn't work because master.csv has real translation times
-# or maybe it doesn't need to, and we could use shortcuts:
-#   * check audio file for existence for "just new"
-#   * compare the translation column for changes
-
-playHt_tts.main(input_file_path = input_file_name, lang_code = lang_code,
-             voice=voice, audio_base_dir = audio_base_dir)
+playHt_tts.main(input_file_path = diff_file_name, lang_code = lang_code,
+             master_file_path=master_file_path, voice=voice, audio_base_dir = audio_base_dir)
 
 # IF we're happy with the output then
 # gsutil rsync -d -r <src> gs://<bucket> 

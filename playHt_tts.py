@@ -6,8 +6,7 @@ import pandas as pd
 import requests
 import logging
 import time
-import csv
-import shutil
+import numpy as np
 from dataclasses import dataclass, replace
 from datetime import datetime
 
@@ -20,16 +19,13 @@ def create_directory(path):
         os.makedirs(path)
     return path
 
-
-
 def main(
         input_file_path: str,
+        master_file_path: str,
         lang_code: str,
         voice: str,
         user_id: str = None,
         api_key: str = None,
-        changed_only = False, 
-        not_done_only = False,
         output_file_path: str = None,
         item_id_column: str = 'item_id',
         audio_base_dir: str = None,
@@ -77,7 +73,7 @@ def main(
     # item_id,labels,en,es-CO,de,context
 
     inputData = pd.read_csv(input_file_path)
-
+    masterData = pd.read_csv(master_file_path)
     # to check translation status should we use translation time
     # or whether the output audio file exists?
 
@@ -139,9 +135,25 @@ def main(
                         with open(audio_file_path(ourRow["labels"], ourRow["item_id"]), "wb") as file:
                             file.write(audioData.content)
                             # can we label ourRow in PD as translated?
-                            ourRow["translation_time"] = datetime.now()
-                            inputData.loc[index, :] = ourRow
-                        print(f"Conversion Finished for row: {index}")
+                            # write content to masterData
+
+                            ## THIS IS WRONG: index is into our "new"
+                            #  file. We want to write to the row with
+                            #  our item_id
+                            #inputData.loc[index, :] = ourRow
+                            #masterData.loc[index,lang_code] = ourRow[lang_code]
+
+                            # try this
+                            # Create a boolean mask
+                            #mask = masterData['item_id'] == ourRow["item_id"]
+                            
+                            # or this
+                            masterData[lang_code] = \
+                                np.where(masterData["item_id"] == ourRow["item_id"], \
+                                          ourRow[lang_code], masterData[lang_code])
+
+                            # Apply the mask and modify the row
+                            #masterData.loc[mask, lang_code] = ourRow[lang_code]                            print(f"Conversion Finished for row: {index}")
                         break
                     else:
                         print("Failed to download the MP3 file")
@@ -152,10 +164,9 @@ def main(
                     # seems like a good tradeoff between "over-polling" and "over-waiting"
                     time.sleep(.1)  # Wait before checking again
     
-    #ourRow now has a Translation Time if it happened
-    # so we can save it to a master sheet
-    # !! No code to read it back in yet!
-    inputData.to_csv("translation_master.csv")
+                # write as we go, so erroring out doesn't lose progress
+                # Translated, so we can save it to a master sheet
+                masterData.to_csv("translation_master.csv")
 
 if __name__ == "__main__":
     main(*sys.argv[1:])
