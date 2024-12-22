@@ -7,7 +7,7 @@ import requests
 import logging
 import time
 from dataclasses import dataclass, replace
-
+from datetime import datetime
 
 # Constants for API, in this case for Play.Ht, maybe
 API_URL = "https://api.play.ht/api/v1/convert"
@@ -31,6 +31,8 @@ def main(
         voice: str,
         user_id: str = None,
         api_key: str = None,
+        changed_only = False, 
+        not_done_only = False,
         output_file_path: str = None,
         item_id_column: str = 'item_id',
         audio_dir: str = None,
@@ -45,7 +47,6 @@ def main(
         voice (str): The name of the play.ht voice to use, e.g.: 'es-CO-SalomeNeural'
         user_id (str, optional): The user ID for authentication. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_USER_ID'.
         api_key (str, optional): The api key authenticating our API calls. If not provided, it will be read from the environment variable 'PLAY_DOT_HT_API_KEY'.
-        output_file_path (str, optional): The path for the output CSV files to create and where to store the state of our transactions. Defaults to './snapshots_{user_id}/tts_{timestamp}_{user_id}.csv'
         item_id_column (str, optional): column name in the input file for stable and unique item ID. Defaults to 'item_id'.
         audio_dir (str, optional): The directory to store the audio files. Defaults to "audio_files/{lang_code}/".
     """
@@ -79,6 +80,9 @@ def main(
     # item_id,labels,en,es-CO,de,context
 
     inputData = pd.read_csv(input_file_path)
+
+    # to check translation status should we use translation time
+    # or whether the output audio file exists?
 
     # build API call
     for index, ourRow in inputData.iterrows():
@@ -138,15 +142,24 @@ def main(
                         with open(audio_file_path(ourRow["labels"], ourRow["item_id"]), "wb") as file:
                             file.write(audioData.content)
                             # can we label ourRow in PD as translated?
-                            ourRow["translation_time"] = pd.now()
+                            ourRow["translation_time"] = datetime.now()
+                            inputData.loc[index, :] = ourRow
+                        print(f"Conversion Finished for row: {index}")
                         break
                     else:
                         print("Failed to download the MP3 file")
                         break
                 else:
-                    print(f"Conversion in progress. Status: {status_data['converted']}")
-                    time.sleep(.3)  # Wait before checking again
-            
+                    # print(f"Conversion in progress. Status: {status_data['converted']}")
+                    # currently most tasks complet in about 1 second, so .5 seconds
+                    # seems like a good tradeoff between "over-polling" and "over-waiting"
+                    time.sleep(.1)  # Wait before checking again
+    
+    #ourRow now has a Translation Time if it happened
+    # so we can save it to a master sheet
+    # !! No code to read it back in yet!
+    inputData.to_csv("translation_master.csv")
+
 if __name__ == "__main__":
     main(*sys.argv[1:])
 

@@ -52,7 +52,8 @@ translationData = translationData.rename(columns={'text': 'en'})
 #translationData = translationData.rename(columns={'labels': 'task'})
 
 # add a translation time column
-translationData['translation_time'] = None
+# later we will need to update from our "master" translation file
+translationData['translation_time'] = pd.NaT # not a time
 
 # We start with a baseline of None, but what if many prompts
 # have already been translated. Can we start from there?
@@ -74,10 +75,18 @@ lang_code = 'es-CO'
 # options for all re-doing changed sources
 # but also for redoing strings that haven't been translated
 # maybe keep a pd/csv with a "translated" column?
-changed_only = True
+changed_only = False
+not_done_only = False # try true:)
+
+# should we filter out just the ones we want here
+# or inside the vendor specific code
+# seems like here is the right idea
+
+# we have our input.csv and our "master.csv" -- once it is created
+# simple dropduplicates doesn't work because master.csv has real translation times
 
 playHt_tts.main(input_file_path = input_file_path, lang_code = lang_code,
-             voice=voice)
+             voice=voice, changed_only = changed_only, not_done_only = not_done_only)
 
 # IF we're happy with the output then
 # gsutil rsync -d -r <src> gs://<bucket> 
