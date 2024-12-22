@@ -6,13 +6,14 @@ import pandas as pd
 import requests
 import logging
 import time
+import csv
+import shutil
 from dataclasses import dataclass, replace
 from datetime import datetime
 
 # Constants for API, in this case for Play.Ht, maybe
 API_URL = "https://api.play.ht/api/v1/convert"
 STATUS_URL = "https://api.play.ht/api/v1/articleStatus"
-
 
 def create_directory(path):
     if not os.path.exists(path):

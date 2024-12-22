@@ -1,0 +1,2854 @@
+,item_id,labels,en,es-CO,de,context
+0,matrix-reasoning-instruct1,matrix-reasoning,,,,"matrix-reasoning-instruct1
+"
+1,matrix-reasoning-instruct2,matrix-reasoning,,,,"matrix-reasoning-instruct2
+"
+2,mental-rotation-instruct1,mental-rotation,,,,"mental-rotation-instruct1
+"
+3,mental-rotation-training-instruct2,mental-rotation,,,,"mental-rotation-training-instruct2
+"
+4,mental-rotation-training-instruct3,mental-rotation,,,,"mental-rotation-training-instruct3
+"
+5,mental-rotation-test-instruct4,mental-rotation,,,,"mental-rotation-test-instruct4
+"
+6,feedback-try-again,general,,,,"feedback-try-again
+"
+7,feedback-good-job,general,,,,"feedback-good-job
+"
+8,feedback-nice-work,general,,,,"feedback-nice-work
+"
+9,general-intro1,general,,,,"general-intro1
+"
+10,pick-buddy,general,,,,"pick-buddy
+"
+11,replay-button,general,,,,"replay-button
+"
+12,general-fullscreen,general,,,,"general-fullscreen
+"
+13,general-exit,general,,,,"general-exit
+"
+14,task-completion,general,,,,"task-completion
+"
+15,matrix-reasoning-prompt1,matrix-reasoning,,,,"matrix-reasoning-prompt1
+"
+16,mental-rotation-prompt2,mental-rotation,,,,"mental-rotation-prompt2
+"
+17,mental-rotation-prompt1,mental-rotation,,,,"mental-rotation-prompt1
+"
+18,math-instructions1,math,,,,"math-instructions1
+"
+19,number-comparison-prompt1,number-comparison,,,,"number-comparison-prompt1
+"
+20,number-comparison-prompt2,number-comparison,,,,"number-comparison-prompt2
+Do you refer to the number? In German the relative pronoun changes depending on the noun.
+RESPONSE: Yes, this is for numbers."
+21,number-identification-prompt1,number-identification,,,,"number-identification-prompt1
+"
+22,missing-number-prompt1,missing-number,,,,"missing-number-prompt1
+"
+23,missing-number-prompt2,missing-number,,,,"missing-number-prompt2
+"
+24,addition-prompt1,addition,,,,"addition-prompt1
+"
+25,addition-prompt2,addition,,,,"addition-prompt2
+"
+26,subtraction-prompt1,subtraction,,,,"subtraction-prompt1
+"
+27,subtraction-prompt2,subtraction,,,,"subtraction-prompt2
+"
+28,multiplication-prompt1,multiplication,,,,"multiplication-prompt1
+"
+29,multiplication-prompt2,multiplication,,,,"multiplication-prompt2
+"
+30,number-line-prompt1,number-line-4AFC,,,,"number-line-prompt1
+"
+31,number-line-slider-prompt1,number-line-slider,,,,"number-line-slider-prompt1
+"
+32,number-identification-1,number-identification,,,,"number-identification-1
+"
+33,number-identification-2,number-identification,,,,"number-identification-2
+"
+34,number-identification-3,number-identification,,,,"number-identification-3
+"
+35,number-identification-4,number-identification,,,,"number-identification-4
+"
+36,number-identification-5,number-identification,,,,"number-identification-5
+"
+37,number-identification-6,number-identification,,,,"number-identification-6
+"
+38,number-identification-7,number-identification,,,,"number-identification-7
+"
+39,number-identification-8,number-identification,,,,"number-identification-8
+"
+40,number-identification-9,number-identification,,,,"number-identification-9
+"
+41,number-identification-10,number-identification,,,,"number-identification-10
+"
+42,number-identification-11,number-identification,,,,"number-identification-11
+"
+43,number-identification-12,number-identification,,,,"number-identification-12
+"
+44,number-identification-13,number-identification,,,,"number-identification-13
+"
+45,number-identification-14,number-identification,,,,"number-identification-14
+"
+46,number-identification-15,number-identification,,,,"number-identification-15
+"
+47,number-identification-16,number-identification,,,,"number-identification-16
+"
+48,number-identification-17,number-identification,,,,"number-identification-17
+"
+49,number-identification-18,number-identification,,,,"number-identification-18
+"
+50,number-identification-19,number-identification,,,,"number-identification-19
+"
+51,number-identification-20,number-identification,,,,"number-identification-20
+"
+52,number-identification-21,number-identification,,,,"number-identification-21
+"
+53,trog-instruct1,trog,,,,"trog-instruct1
+"
+54,trog-prompt1,trog,,,,"trog-prompt1
+These are general prompts and I understand the tricky part (same for Spanish). These introduce the items labeled ""trog"" below. The examples are in the link I put in my comment below (line 59)."
+55,trog-prompt2,trog,,,,"trog-prompt2
+"
+56,trog-prompt3,trog,,,,"trog-prompt3
+This is the right translation. "
+57,same-different-selection-prompt1,same-different-selection,,,,"same-different-selection-prompt1
+"
+58,same-different-selection-prompt2,same-different-selection,,,,"same-different-selection-prompt2
+"
+59,same-different-selection-prompt3,same-different-selection,,,,"same-different-selection-prompt3
+For example: the boy is standing on a chair (when there is another picture with a boy standing on two chairs too). So, in this case in German it would be that the picture is the same but showing some differences. 
+RESPONSE: Ah, so these instructions are for a different task (not TROG).
+This is the description of the task in this line: This task measures set shifting. Children are shown two pictures that are similar along one dimension (content, color, or size) and verbal told the dimension of similarity. Next, children see the same two pictures plus a new third picture. The third picture is similar to one of the first two pictures along a dimension that is different from that of the first two pictures (e.g., if the first two pictures were similar along the dimension of shape, the third picture would be similar to one of the first two pictures along the dimension of color or size). Children are asked to choose which of the two original pictures is the same as the new third picture. https://hs-levante-assessment-dev.web.app/?task=same-different-selection  - Ok, then this is also the right translation I chose. 
+"
+60,shared-intro-devices,trog,,,,"shared-intro-devices
+"
+61,shared-choose-picture-press-arrow,trog,,,,"shared-choose-picture-press-arrow
+"
+62,shared-intro-replay,trog,,,,"shared-intro-replay
+"
+63,trog-instr1-matching,trog,,,,"trog-instr1-matching
+"
+64,trog-item-1,trog,,,,"trog-item-1
+"
+65,trog-item-2,trog,,,,"trog-item-2
+"
+66,trog-item-3,trog,,,,"trog-item-3
+"
+67,trog-item-4,trog,,,,"trog-item-4
+"
+68,trog-item-5,trog,,,,"trog-item-5
+"
+69,trog-item-6,trog,,,,"trog-item-6
+"
+70,trog-item-7,trog,,,,"trog-item-7
+"
+71,trog-item-8,trog,,,,"trog-item-8
+"
+72,trog-item-9,trog,,,,"trog-item-9
+"
+73,trog-item-10,trog,,,,"trog-item-10
+"
+74,trog-item-11,trog,,,,"trog-item-11
+"
+75,trog-item-12,trog,,,,"trog-item-12
+"
+76,trog-item-13,trog,,,,"trog-item-13
+"
+77,trog-item-14,trog,,,,"trog-item-14
+"
+78,trog-item-15,trog,,,,"trog-item-15
+"
+79,trog-item-16,trog,,,,"trog-item-16
+"
+80,trog-item-17,trog,,,,"trog-item-17
+"
+81,trog-item-18,trog,,,,"trog-item-18
+"
+82,trog-item-19,trog,,,,"trog-item-19
+"
+83,trog-item-20,trog,,,,"trog-item-20
+"
+84,trog-item-21,trog,,,,"trog-item-21
+"
+85,trog-item-22,trog,,,,"trog-item-22
+"
+86,trog-item-23,trog,,,,"trog-item-23
+"
+87,trog-item-24,trog,,,,"trog-item-24
+"
+88,trog-item-25,trog,,,,"trog-item-25
+"
+89,trog-item-26,trog,,,,"trog-item-26
+"
+90,trog-item-27,trog,,,,"trog-item-27
+"
+91,trog-item-28,trog,,,,"trog-item-28
+"
+92,trog-item-29,trog,,,,"trog-item-29
+"
+93,trog-item-30,trog,,,,"trog-item-30
+"
+94,trog-item-31,trog,,,,"trog-item-31
+"
+95,trog-item-32,trog,,,,"trog-item-32
+"
+96,trog-item-33,trog,,,,"trog-item-33
+"
+97,trog-item-34,trog,,,,"trog-item-34
+"
+98,trog-item-35,trog,,,,"trog-item-35
+"
+99,trog-item-36,trog,,,,"trog-item-36
+"
+100,trog-item-37,trog,,,,"trog-item-37
+"
+101,trog-item-38,trog,,,,"trog-item-38
+"
+102,trog-item-39,trog,,,,"trog-item-39
+"
+103,trog-item-40,trog,,,,"trog-item-40
+"
+104,trog-item-41,trog,,,,"trog-item-41
+"
+105,trog-item-42,trog,,,,"trog-item-42
+"
+106,trog-item-43,trog,,,,"trog-item-43
+"
+107,trog-item-44,trog,,,,"trog-item-44
+"
+108,trog-item-45,trog,,,,"trog-item-45
+"
+109,trog-item-46,trog,,,,"trog-item-46
+"
+110,trog-item-47,trog,,,,"trog-item-47
+"
+111,trog-item-48,trog,,,,"trog-item-48
+"
+112,trog-item-49,trog,,,,"trog-item-49
+"
+113,trog-item-50,trog,,,,"trog-item-50
+"
+114,trog-item-51,trog,,,,"trog-item-51
+"
+115,trog-item-52,trog,,,,"trog-item-52
+"
+116,trog-item-53,trog,,,,"trog-item-53
+"
+117,trog-item-54,trog,,,,"trog-item-54
+"
+118,trog-item-55,trog,,,,"trog-item-55
+"
+119,trog-item-56,trog,,,,"trog-item-56
+"
+120,trog-item-57,trog,,,,"trog-item-57
+"
+121,trog-item-58,trog,,,,"trog-item-58
+"
+122,trog-item-59,trog,,,,"trog-item-59
+"
+123,trog-item-60,trog,,,,"trog-item-60
+"
+124,trog-item-61,trog,,,,"trog-item-61
+"
+125,trog-item-62,trog,,,,"trog-item-62
+"
+126,trog-item-63,trog,,,,"trog-item-63
+"
+127,trog-item-64,trog,,,,"trog-item-64
+"
+128,trog-item-65,trog,,,,"trog-item-65
+"
+129,trog-item-66,trog,,,,"trog-item-66
+"
+130,trog-item-67,trog,,,,"trog-item-67
+"
+131,trog-item-68,trog,,,,"trog-item-68
+"
+132,trog-item-69,trog,,,,"trog-item-69
+"
+133,trog-item-70,trog,,,,"trog-item-70
+"
+134,trog-item-71,trog,,,,"trog-item-71
+"
+135,trog-item-72,trog,,,,"trog-item-72
+"
+136,trog-item-73,trog,,,,"trog-item-73
+"
+137,trog-item-74,trog,,,,"trog-item-74
+"
+138,trog-item-75,trog,,,,"trog-item-75
+"
+139,trog-item-76,trog,,,,"trog-item-76
+"
+140,trog-item-77,trog,,,,"trog-item-77
+"
+141,trog-item-78,trog,,,,"trog-item-78
+"
+142,trog-item-79,trog,,,,"trog-item-79
+"
+143,trog-item-80,trog,,,,"trog-item-80
+"
+144,trog-item-81,trog,,,,"trog-item-81
+"
+145,trog-item-82,trog,,,,"trog-item-82
+"
+146,trog-item-83,trog,,,,"trog-item-83
+"
+147,trog-item-84,trog,,,,"trog-item-84
+"
+148,trog-item-85,trog,,,,"trog-item-85
+"
+149,trog-item-86,trog,,,,"trog-item-86
+"
+150,trog-item-87,trog,,,,"trog-item-87
+"
+151,trog-item-88,trog,,,,"trog-item-88
+"
+152,trog-item-89,trog,,,,"trog-item-89
+"
+153,trog-item-90,trog,,,,"trog-item-90
+"
+154,trog-item-91,trog,,,,"trog-item-91
+"
+155,trog-item-92,trog,,,,"trog-item-92
+"
+156,trog-item-93,trog,,,,"trog-item-93
+"
+157,trog-item-94,trog,,,,"trog-item-94
+"
+158,trog-item-95,trog,,,,"trog-item-95
+"
+159,trog-item-96,trog,,,,"trog-item-96
+"
+160,trog-item-97,trog,,,,"trog-item-97
+"
+161,trog-item-98,trog,,,,"trog-item-98
+"
+162,trog-item-99,trog,,,,"trog-item-99
+"
+163,trog-item-100,trog,,,,"trog-item-100
+"
+164,trog-item-101,trog,,,,"trog-item-101
+"
+165,trog-item-102,trog,,,,"trog-item-102
+"
+166,trog-item-103,trog,,,,"trog-item-103
+"
+167,ToM-scene1-instruct1,theory-of-mind,,,,"ToM-scene1-instruct1
+"
+168,ToM-scene1-instruct2,theory-of-mind,,,,"ToM-scene1-instruct2
+"
+169,ToM-scene1-instruct3,theory-of-mind,,,,"ToM-scene1-instruct3
+"
+170,ToM-scene1-q1-false_belief,theory-of-mind,,,,"ToM-scene1-q1-false_belief
+Feel free to offer child names that would make sense to German children if the English ones wouldn't.... "
+171,ToM-scene1-q2-reality_check,theory-of-mind,,,,"ToM-scene1-q2-reality_check
+"
+172,ToM-scene1-q3-emotion_reasoning,theory-of-mind,,,,"ToM-scene1-q3-emotion_reasoning
+"
+173,ToM-scene2-instruct1,theory-of-mind,,,,"ToM-scene2-instruct1
+"
+174,ToM-scene2-instruct2,theory-of-mind,,,,"ToM-scene2-instruct2
+"
+175,ToM-scene2-instruct3,theory-of-mind,,,,"ToM-scene2-instruct3
+"
+176,ToM-scene2-q1-false_belief,theory-of-mind,,,,"ToM-scene2-q1-false_belief
+"
+177,ToM-scene2-instruct4,theory-of-mind,,,,"ToM-scene2-instruct4
+"
+178,shelf,theory-of-mind,,,,"shelf
+"
+179,coats,theory-of-mind,,,,"coats
+"
+180,ToM-scene2-q2-emotion_reasoning,theory-of-mind,,,,"ToM-scene2-q2-emotion_reasoning
+"
+181,ToM-scene2-q3-false_belief,theory-of-mind,,,,"ToM-scene2-q3-false_belief
+"
+182,ToM-scene2-q4-false_belief,theory-of-mind,,,,"ToM-scene2-q4-false_belief
+"
+183,ToM-scene2-q5-reality_check,theory-of-mind,,,,"ToM-scene2-q5-reality_check
+"
+184,ToM-scene2-q6-reality_check,theory-of-mind,,,,"ToM-scene2-q6-reality_check
+"
+185,ToM-scene3-instruct1,theory-of-mind,,,,"ToM-scene3-instruct1
+"
+186,ToM-scene3-instruct2,theory-of-mind,,,,"ToM-scene3-instruct2
+"
+187,ToM-scene3-instruct3,theory-of-mind,,,,"ToM-scene3-instruct3
+"
+188,ToM-scene3-instruct4,theory-of-mind,,,,"ToM-scene3-instruct4
+"
+189,ToM-scene3-q1,theory-of-mind,,,,"ToM-scene3-q1
+"
+190,ToM-scene3-q2-false_belief,theory-of-mind,,,,"ToM-scene3-q2-false_belief
+"
+191,ToM-scene3-q2-reality_check,theory-of-mind,,,,"ToM-scene3-q2-reality_check
+"
+192,ToM-scene3-q3-emotion_reasoning,theory-of-mind,,,,"ToM-scene3-q3-emotion_reasoning
+"
+193,ToM-scene4-instruct1,theory-of-mind,,,,"ToM-scene4-instruct1
+"
+194,ToM-scene4-instruct2,theory-of-mind,,,,"ToM-scene4-instruct2
+"
+195,ToM-scene4-q1-emotion_reasoning,theory-of-mind,,,,"ToM-scene4-q1-emotion_reasoning
+"
+196,ToM-scene4-instruct3,theory-of-mind,,,,"ToM-scene4-instruct3
+"
+197,ToM-scene4-instruct4,theory-of-mind,,,,"ToM-scene4-instruct4
+"
+198,ToM-scene4-q2,theory-of-mind,,,,"ToM-scene4-q2
+"
+199,ToM-scene4-q3,theory-of-mind,,,,"ToM-scene4-q3
+"
+200,ToM-scene4-q4-false_belief,theory-of-mind,,,,"ToM-scene4-q4-false_belief
+"
+201,ToM-scene4-instruct5,theory-of-mind,,,,"ToM-scene4-instruct5
+"
+202,ToM-scene4-q5,theory-of-mind,,,,"ToM-scene4-q5
+"
+203,ToM-scene4-q6,theory-of-mind,,,,"ToM-scene4-q6
+"
+204,ToM-scene4-q7,theory-of-mind,,,,"ToM-scene4-q7
+"
+205,ToM-scene4-instruct6,theory-of-mind,,,,"ToM-scene4-instruct6
+"
+206,ToM-scene5-instruct1,theory-of-mind,,,,"ToM-scene5-instruct1
+"
+207,ToM-scene5-instruct2,theory-of-mind,,,,"ToM-scene5-instruct2
+"
+208,ToM-scene5-q1,theory-of-mind,,,,"ToM-scene5-q1
+"
+209,ToM-scene5-q2-reality_check,theory-of-mind,,,,"ToM-scene5-q2-reality_check
+"
+210,ToM-scene6-instruct1,theory-of-mind,,,,"ToM-scene6-instruct1
+"
+211,ToM-scene6-instruct2,theory-of-mind,,,,"ToM-scene6-instruct2
+"
+212,ToM-scene6-q1,theory-of-mind,,,,"ToM-scene6-q1
+"
+213,ToM-scene6-instruct3,theory-of-mind,,,,"ToM-scene6-instruct3
+"
+214,ToM-scene6-q2,theory-of-mind,,,,"ToM-scene6-q2
+"
+215,ToM-scene6-q3,theory-of-mind,,,,"ToM-scene6-q3
+"
+216,ToM-scene6-instruct4,theory-of-mind,,,,"ToM-scene6-instruct4
+"
+217,ToM-scene6-q4,theory-of-mind,,,,"ToM-scene6-q4
+"
+218,ToM-scene6-instruct5,theory-of-mind,,,,"ToM-scene6-instruct5
+"
+219,ToM-scene6-q5,theory-of-mind,,,,"ToM-scene6-q5
+"
+220,ToM-scene6-q6,theory-of-mind,,,,"ToM-scene6-q6
+"
+221,hostile-attribution-scene1-instruct1,hostile-attribution,,,,"hostile-attribution-scene1-instruct1
+"
+222,hostile-attribution-scene1-instruct2,hostile-attribution,,,,"hostile-attribution-scene1-instruct2
+"
+223,hostile-attribution-scene1-q1,hostile-attribution,,,,"hostile-attribution-scene1-q1
+"
+224,hostile-attribution-scene1-q2,hostile-attribution,,,,"hostile-attribution-scene1-q2
+"
+225,hostile-attribution-scene1-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans1
+"
+226,hostile-attribution-scene1-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans2
+"
+227,hostile-attribution-scene1-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans3
+"
+228,hostile-attribution-scene2-instruct1,hostile-attribution,,,,"hostile-attribution-scene2-instruct1
+"
+229,hostile-attribution-scene2-instruct2,hostile-attribution,,,,"hostile-attribution-scene2-instruct2
+"
+230,hostile-attribution-scene2-q1,hostile-attribution,,,,"hostile-attribution-scene2-q1
+"
+231,hostile-attribution-scene2-q2,hostile-attribution,,,,"hostile-attribution-scene2-q2
+"
+232,hostile-attribution-scene2-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans1
+"
+233,hostile-attribution-scene2-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans2
+"
+234,hostile-attribution-scene2-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans3
+"
+235,hostile-attribution-scene3-instruct1,hostile-attribution,,,,"hostile-attribution-scene3-instruct1
+"
+236,hostile-attribution-scene3-instruct2,hostile-attribution,,,,"hostile-attribution-scene3-instruct2
+"
+237,hostile-attribution-scene3-instruct3,hostile-attribution,,,,"hostile-attribution-scene3-instruct3
+"
+238,hostile-attribution-scene3-q1,hostile-attribution,,,,"hostile-attribution-scene3-q1
+"
+239,hostile-attribution-scene3-q2,hostile-attribution,,,,"hostile-attribution-scene3-q2
+"
+240,hostile-attribution-scene3-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans1
+"
+241,hostile-attribution-scene3-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans2
+"
+242,hostile-attribution-scene3-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans3
+"
+243,same-different-selection-touch-circle,same-different-selection,,,,"same-different-selection-touch-circle
+"
+244,same-different-selection-touch-square,same-different-selection,,,,"same-different-selection-touch-square
+"
+245,same-different-selection-touch-triangle,same-different-selection,,,,"same-different-selection-touch-triangle
+"
+246,same-different-selection-touch-green,same-different-selection,,,,"same-different-selection-touch-green
+"
+247,same-different-selection-touch-red,same-different-selection,,,,"same-different-selection-touch-red
+"
+248,same-different-selection-touch-blue,same-different-selection,,,,"same-different-selection-touch-blue
+"
+249,same-different-selection-touch-small,same-different-selection,,,,"same-different-selection-touch-small
+"
+250,same-different-selection-touch-medium,same-different-selection,,,,"same-different-selection-touch-medium
+"
+251,same-different-selection-touch-large,same-different-selection,,,,"same-different-selection-touch-large
+"
+252,same-different-selection-both-circles,same-different-selection,,,,"same-different-selection-both-circles
+"
+253,same-different-selection-both-squares,same-different-selection,,,,"same-different-selection-both-squares
+"
+254,same-different-selection-both-triangles,same-different-selection,,,,"same-different-selection-both-triangles
+"
+255,same-different-selection-both-red,same-different-selection,,,,"same-different-selection-both-red
+"
+256,same-different-selection-both-green,same-different-selection,,,,"same-different-selection-both-green
+"
+257,same-different-selection-both-blue,same-different-selection,,,,"same-different-selection-both-blue
+"
+258,same-different-selection-both-small,same-different-selection,,,,"same-different-selection-both-small
+"
+259,same-different-selection-both-medium,same-different-selection,,,,"same-different-selection-both-medium
+"
+260,same-different-selection-both-large,same-different-selection,,,,"same-different-selection-both-large
+"
+261,sds-prompt3,same-different-selection,,,,"sds-prompt3
+"
+262,sds-2match-prompt1,same-different-selection,,,,"sds-2match-prompt1
+"
+263,sds-2match-prompt2,same-different-selection,,,,"sds-2match-prompt2
+"
+264,sds-3match-prompt1,same-different-selection,,,,"sds-3match-prompt1
+"
+265,sds-3match-prompt2,same-different-selection,,,,"sds-3match-prompt2
+"
+266,sds-3unique-prompt1,same-different-selection,,,,"sds-3unique-prompt1
+"
+267,sds-3unique-prompt2,same-different-selection,,,,"sds-3unique-prompt2
+"
+268,memory-game-instruct1,memory-game,,,,"memory-game-instruct1
+"
+269,memory-game-instruct2,memory-game,,,,"memory-game-instruct2
+"
+270,memory-game-instruct3,memory-game,,,,"memory-game-instruct3
+"
+271,memory-game-instruct4,memory-game,,,,"memory-game-instruct4
+"
+272,memory-game-prompt1,memory-game,,,,"memory-game-prompt1
+"
+273,memory-game-forward-prompt,memory-game,,,,"memory-game-forward-prompt
+"
+274,memory-game-instruct5,memory-game,,,,"memory-game-instruct5
+"
+275,memory-game-instruct6,memory-game,,,,"memory-game-instruct6
+"
+276,memory-game-instruct7,memory-game,,,,"memory-game-instruct7
+"
+277,memory-game-backward-prompt,memory-game,,,,"memory-game-backward-prompt
+"
+278,heart-instruct1,hearts-and-flowers,,,,"heart-instruct1
+"
+279,heart-instruct2,hearts-and-flowers,,,,"heart-instruct2
+"
+280,hearts-and-flowers-try-again,hearts-and-flowers,,,,"hearts-and-flowers-try-again
+"
+281,heart-practice-feedback1,hearts-and-flowers,,,,"heart-practice-feedback1
+"
+282,hearts-and-flowers-practice-time,hearts-and-flowers,,,,"hearts-and-flowers-practice-time
+"
+283,heart-practice-feedback2,hearts-and-flowers,,,,"heart-practice-feedback2
+"
+284,hearts-and-flowers-instruct1,hearts-and-flowers,,,,"hearts-and-flowers-instruct1
+"
+285,hearts-and-flowers-instruct2,hearts-and-flowers,,,,"hearts-and-flowers-instruct2
+"
+286,hearts-and-flowers-play-time,hearts-and-flowers,,,,"hearts-and-flowers-play-time
+"
+287,flower-instruct1,hearts-and-flowers,,,,"flower-instruct1
+"
+288,flower-instruct2,hearts-and-flowers,,,,"flower-instruct2
+"
+289,flower-practice-feedback1,hearts-and-flowers,,,,"flower-practice-feedback1
+"
+290,flower-practice-feedback2,hearts-and-flowers,,,,"flower-practice-feedback2
+"
+291,hearts-and-flowers-instruct3,hearts-and-flowers,,,,"hearts-and-flowers-instruct3
+"
+292,continue-button-text,general,,,,"continue-button-text
+"
+293,close-button-text,general,,,,"close-button-text
+"
+294,hearts-and-flowers-encourage1,hearts-and-flowers,,,,"hearts-and-flowers-encourage1
+"
+295,hearts-and-flowers-encourage2,hearts-and-flowers,,,,"hearts-and-flowers-encourage2
+"
+296,hearts-and-flowers-end,hearts-and-flowers,,,,"hearts-and-flowers-end
+"
+297,vocab-item-001,vocab,,,,"vocab-item-001
+"
+298,vocab-item-002,vocab,,,,"vocab-item-002
+"
+299,vocab-item-003,vocab,,,,"vocab-item-003
+"
+300,vocab-item-004,vocab,,,,"vocab-item-004
+"
+301,vocab-item-005,vocab,,,,"vocab-item-005
+"
+302,vocab-item-006,vocab,,,,"vocab-item-006
+"
+303,vocab-item-007,vocab,,,,"vocab-item-007
+"
+304,vocab-item-008,vocab,,,,"vocab-item-008
+"
+305,vocab-item-009,vocab,,,,"vocab-item-009
+"
+306,vocab-item-010,vocab,,,,"vocab-item-010
+"
+307,vocab-item-011,vocab,,,,"vocab-item-011
+"
+308,vocab-item-012,vocab,,,,"vocab-item-012
+"
+309,vocab-item-013,vocab,,,,"vocab-item-013
+"
+310,vocab-item-014,vocab,,,,"vocab-item-014
+"
+311,vocab-item-015,vocab,,,,"vocab-item-015
+"
+312,vocab-item-016,vocab,,,,"vocab-item-016
+"
+313,vocab-item-017,vocab,,,,"vocab-item-017
+"
+314,vocab-item-018,vocab,,,,"vocab-item-018
+"
+315,vocab-item-019,vocab,,,,"vocab-item-019
+"
+316,vocab-item-020,vocab,,,,"vocab-item-020
+"
+317,vocab-item-021,vocab,,,,"vocab-item-021
+"
+318,vocab-item-022,vocab,,,,"vocab-item-022
+"
+319,vocab-item-023,vocab,,,,"vocab-item-023
+"
+320,vocab-item-024,vocab,,,,"vocab-item-024
+"
+321,vocab-item-025,vocab,,,,"vocab-item-025
+"
+322,vocab-item-026,vocab,,,,"vocab-item-026
+"
+323,vocab-item-027,vocab,,,,"vocab-item-027
+"
+324,vocab-item-028,vocab,,,,"vocab-item-028
+"
+325,vocab-item-029,vocab,,,,"vocab-item-029
+"
+326,vocab-item-030,vocab,,,,"vocab-item-030
+"
+327,vocab-item-031,vocab,,,,"vocab-item-031
+"
+328,vocab-item-032,vocab,,,,"vocab-item-032
+"
+329,vocab-item-033,vocab,,,,"vocab-item-033
+"
+330,vocab-item-034,vocab,,,,"vocab-item-034
+"
+331,vocab-item-035,vocab,,,,"vocab-item-035
+"
+332,vocab-item-036,vocab,,,,"vocab-item-036
+"
+333,vocab-item-037,vocab,,,,"vocab-item-037
+"
+334,vocab-item-038,vocab,,,,"vocab-item-038
+"
+335,vocab-item-039,vocab,,,,"vocab-item-039
+"
+336,vocab-item-040,vocab,,,,"vocab-item-040
+"
+337,vocab-item-041,vocab,,,,"vocab-item-041
+"
+338,vocab-item-042,vocab,,,,"vocab-item-042
+"
+339,vocab-item-043,vocab,,,,"vocab-item-043
+"
+340,vocab-item-044,vocab,,,,"vocab-item-044
+"
+341,vocab-item-045,vocab,,,,"vocab-item-045
+"
+342,vocab-item-046,vocab,,,,"vocab-item-046
+"
+343,vocab-item-047,vocab,,,,"vocab-item-047
+"
+344,vocab-item-048,vocab,,,,"vocab-item-048
+"
+345,vocab-item-049,vocab,,,,"vocab-item-049
+"
+346,vocab-item-050,vocab,,,,"vocab-item-050
+"
+347,vocab-item-051,vocab,,,,"vocab-item-051
+"
+348,vocab-item-052,vocab,,,,"vocab-item-052
+"
+349,vocab-item-053,vocab,,,,"vocab-item-053
+"
+350,vocab-item-054,vocab,,,,"vocab-item-054
+"
+351,vocab-item-055,vocab,,,,"vocab-item-055
+"
+352,vocab-item-056,vocab,,,,"vocab-item-056
+"
+353,vocab-item-057,vocab,,,,"vocab-item-057
+"
+354,vocab-item-058,vocab,,,,"vocab-item-058
+"
+355,vocab-item-059,vocab,,,,"vocab-item-059
+"
+356,vocab-item-060,vocab,,,,"vocab-item-060
+"
+357,vocab-item-061,vocab,,,,"vocab-item-061
+"
+358,vocab-item-062,vocab,,,,"vocab-item-062
+"
+359,vocab-item-063,vocab,,,,"vocab-item-063
+"
+360,vocab-item-064,vocab,,,,"vocab-item-064
+"
+361,vocab-item-065,vocab,,,,"vocab-item-065
+"
+362,vocab-item-066,vocab,,,,"vocab-item-066
+"
+363,vocab-item-067,vocab,,,,"vocab-item-067
+"
+364,vocab-item-068,vocab,,,,"vocab-item-068
+"
+365,vocab-item-069,vocab,,,,"vocab-item-069
+"
+366,vocab-item-070,vocab,,,,"vocab-item-070
+"
+367,vocab-item-071,vocab,,,,"vocab-item-071
+"
+368,vocab-item-072,vocab,,,,"vocab-item-072
+"
+369,vocab-item-073,vocab,,,,"vocab-item-073
+"
+370,vocab-item-074,vocab,,,,"vocab-item-074
+"
+371,vocab-item-075,vocab,,,,"vocab-item-075
+"
+372,vocab-item-076,vocab,,,,"vocab-item-076
+"
+373,vocab-item-077,vocab,,,,"vocab-item-077
+"
+374,vocab-item-078,vocab,,,,"vocab-item-078
+"
+375,vocab-item-079,vocab,,,,"vocab-item-079
+"
+376,vocab-item-080,vocab,,,,"vocab-item-080
+"
+377,vocab-item-081,vocab,,,,"vocab-item-081
+"
+378,vocab-item-082,vocab,,,,"vocab-item-082
+"
+379,vocab-item-083,vocab,,,,"vocab-item-083
+"
+380,vocab-item-084,vocab,,,,"vocab-item-084
+"
+381,vocab-item-085,vocab,,,,"vocab-item-085
+"
+382,vocab-item-086,vocab,,,,"vocab-item-086
+"
+383,vocab-item-087,vocab,,,,"vocab-item-087
+"
+384,vocab-item-088,vocab,,,,"vocab-item-088
+"
+385,vocab-item-089,vocab,,,,"vocab-item-089
+"
+386,vocab-item-090,vocab,,,,"vocab-item-090
+"
+387,vocab-item-091,vocab,,,,"vocab-item-091
+"
+388,vocab-item-092,vocab,,,,"vocab-item-092
+"
+389,vocab-item-093,vocab,,,,"vocab-item-093
+"
+390,vocab-item-094,vocab,,,,"vocab-item-094
+"
+391,vocab-item-095,vocab,,,,"vocab-item-095
+"
+392,vocab-item-096,vocab,,,,"vocab-item-096
+"
+393,vocab-item-097,vocab,,,,"vocab-item-097
+"
+394,vocab-item-098,vocab,,,,"vocab-item-098
+"
+395,vocab-item-099,vocab,,,,"vocab-item-099
+"
+396,vocab-item-100,vocab,,,,"vocab-item-100
+"
+397,vocab-item-101,vocab,,,,"vocab-item-101
+"
+398,vocab-item-102,vocab,,,,"vocab-item-102
+"
+399,vocab-item-103,vocab,,,,"vocab-item-103
+"
+400,vocab-item-104,vocab,,,,"vocab-item-104
+"
+401,vocab-item-105,vocab,,,,"vocab-item-105
+"
+402,vocab-item-106,vocab,,,,"vocab-item-106
+"
+403,vocab-item-107,vocab,,,,"vocab-item-107
+"
+404,vocab-item-108,vocab,,,,"vocab-item-108
+"
+405,vocab-item-109,vocab,,,,"vocab-item-109
+"
+406,vocab-item-110,vocab,,,,"vocab-item-110
+"
+407,vocab-item-111,vocab,,,,"vocab-item-111
+"
+408,vocab-item-112,vocab,,,,"vocab-item-112
+"
+409,vocab-item-113,vocab,,,,"vocab-item-113
+"
+410,vocab-item-114,vocab,,,,"vocab-item-114
+"
+411,vocab-item-115,vocab,,,,"vocab-item-115
+"
+412,vocab-item-116,vocab,,,,"vocab-item-116
+"
+413,vocab-item-117,vocab,,,,"vocab-item-117
+"
+414,vocab-item-118,vocab,,,,"vocab-item-118
+"
+415,vocab-item-119,vocab,,,,"vocab-item-119
+"
+416,vocab-item-120,vocab,,,,"vocab-item-120
+"
+417,vocab-item-121,vocab,,,,"vocab-item-121
+"
+418,vocab-item-122,vocab,,,,"vocab-item-122
+"
+419,vocab-item-123,vocab,,,,"vocab-item-123
+"
+420,vocab-item-124,vocab,,,,"vocab-item-124
+"
+421,vocab-item-125,vocab,,,,"vocab-item-125
+"
+422,vocab-item-126,vocab,,,,"vocab-item-126
+"
+423,vocab-item-127,vocab,,,,"vocab-item-127
+"
+424,vocab-item-128,vocab,,,,"vocab-item-128
+"
+425,vocab-item-129,vocab,,,,"vocab-item-129
+"
+426,vocab-item-130,vocab,,,,"vocab-item-130
+"
+427,vocab-item-131,vocab,,,,"vocab-item-131
+"
+428,vocab-item-132,vocab,,,,"vocab-item-132
+"
+429,vocab-item-133,vocab,,,,"vocab-item-133
+"
+430,vocab-item-134,vocab,,,,"vocab-item-134
+"
+431,vocab-item-135,vocab,,,,"vocab-item-135
+"
+432,vocab-item-136,vocab,,,,"vocab-item-136
+"
+433,vocab-item-137,vocab,,,,"vocab-item-137
+"
+434,vocab-item-138,vocab,,,,"vocab-item-138
+"
+435,vocab-item-139,vocab,,,,"vocab-item-139
+"
+436,vocab-item-140,vocab,,,,"vocab-item-140
+"
+437,vocab-item-141,vocab,,,,"vocab-item-141
+"
+438,vocab-item-142,vocab,,,,"vocab-item-142
+"
+439,vocab-item-143,vocab,,,,"vocab-item-143
+"
+440,vocab-item-144,vocab,,,,"vocab-item-144
+"
+441,vocab-item-145,vocab,,,,"vocab-item-145
+"
+442,vocab-item-146,vocab,,,,"vocab-item-146
+"
+443,vocab-item-147,vocab,,,,"vocab-item-147
+"
+444,vocab-item-148,vocab,,,,"vocab-item-148
+"
+445,vocab-item-149,vocab,,,,"vocab-item-149
+"
+446,vocab-item-150,vocab,,,,"vocab-item-150
+"
+447,vocab-item-151,vocab,,,,"vocab-item-151
+"
+448,vocab-item-152,vocab,,,,"vocab-item-152
+"
+449,vocab-item-153,vocab,,,,"vocab-item-153
+"
+450,vocab-item-154,vocab,,,,"vocab-item-154
+"
+451,vocab-item-155,vocab,,,,"vocab-item-155
+"
+452,vocab-item-156,vocab,,,,"vocab-item-156
+"
+453,vocab-item-157,vocab,,,,"vocab-item-157
+"
+454,vocab-item-158,vocab,,,,"vocab-item-158
+"
+455,vocab-item-159,vocab,,,,"vocab-item-159
+"
+456,vocab-item-160,vocab,,,,"vocab-item-160
+"
+457,vocab-item-161,vocab,,,,"vocab-item-161
+"
+458,vocab-item-162,vocab,,,,"vocab-item-162
+"
+459,vocab-item-163,vocab,,,,"vocab-item-163
+"
+460,vocab-item-164,vocab,,,,"vocab-item-164
+"
+461,vocab-item-165,vocab,,,,"vocab-item-165
+"
+462,vocab-item-166,vocab,,,,"vocab-item-166
+"
+463,vocab-item-167,vocab,,,,"vocab-item-167
+"
+464,vocab-item-168,vocab,,,,"vocab-item-168
+"
+465,vocab-item-169,vocab,,,,"vocab-item-169
+"
+466,vocab-item-170,vocab,,,,"vocab-item-170
+"
+467,vocab-instruct-1,vocab,,,,"vocab-instruct-1
+"
+468,vocab-practice-1,vocab,,,,"vocab-practice-1
+"
+469,vocab-instruct-2,vocab,,,,"vocab-instruct-2
+"
+470,vocab-instruct-3,vocab,,,,"vocab-instruct-3
+"
+471,01_intro,vocab,,,,"01_intro
+"
+472,02_intro_t,vocab,,,,"02_intro_t
+"
+473,03_intro_1,vocab,,,,"03_intro_1
+"
+474,03_intro_t,vocab,,,,"03_intro_t
+"
+475,06_ready_t,vocab,,,,"06_ready_t
+"
+476,07_mid1_t,vocab,,,,"07_mid1_t
+"
+477,08_mid2_t,vocab,,,,"08_mid2_t
+"
+478,09_final_t,vocab,,,,"09_final_t
+"
+479,break1_ns,vocab,,,,"break1_ns
+"
+480,break2_ns,vocab,,,,"break2_ns
+"
+481,end_ns,vocab,,,,"end_ns
+"
+482,intro1_ns,vocab,,,,"intro1_ns
+"
+483,intro2_ns,vocab,,,,"intro2_ns
+"
+484,intro3_ns,vocab,,,,"intro3_ns
+"
+485,ready_ns,vocab,,,,"ready_ns
+"
+486,task-finished,general,,,,"task-finished
+"
+487,math-adult-instructions-1,math,,,,"math-adult-instructions-1
+"
+488,general-footer,general,,,,"general-footer
+"
+489,instructions,general,,,,"instructions
+"
+490,math-adult-instructions-2,math,,,,"math-adult-instructions-2
+"
+491,math-post-practice,math,,,,"math-post-practice
+"
+492,mental-rotation-adult-instructions1,mental-rotation,,,,"mental-rotation-adult-instructions1
+"
+493,feedbackCorrect,general,,,,"feedbackCorrect
+"
+494,memory-game-display,memory-game,,,,"memory-game-display
+"
+495,memory-game-input,memory-game,,,,"memory-game-input
+"
+496,general-encourage,general,,,,"general-encourage
+"
+497,ToM-by-accident,theory-of-mind,,,,"ToM-by-accident
+"
+498,ToM-on-purpose,theory-of-mind,,,,"ToM-on-purpose
+"
+499,general-intro1,general,,,,"general-intro1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+500,general-intro2,general,,,,"general-intro2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+501,pick-buddy,general,,,,"pick-buddy
+Final es-co & de translation review complete. 
+When implemented, confirm this phrasing makes sense with the visuals, selection method, etc.
+Sheet: translation-items-v2"
+502,general-intro3,general,,,,"general-intro3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+503,general-intro4,general,,,,"general-intro4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+504,general-intro5,general,,,,"general-intro5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+505,task-finished,general,,,,"task-finished
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+506,continue-button-text,general,,,,"continue-button-text
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+507,close-button-text,general,,,,"close-button-text
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+508,general-footer,general,,,,"general-footer
+Final es-co translation review complete.
+For DE confirm wording - send screen shot to DE 
+Sheet: translation-items-v2"
+509,instructions,general,,,,"instructions
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+510,general-encourage,general,,,,"general-encourage
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+511,feedbackCorrect,general,,,,"feedbackCorrect
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+512,feedback-try-again,general,,,,"feedback-try-again
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+513,feedback-good-job,general,,,,"feedback-good-job
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+514,feedback-nice-work,general,,,,"feedback-nice-work
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+515,replay-button,general,,,,"replay-button
+Final es-co translation review complete.
+For DE confirm ""repeat button"" translation is specific enough
+Sheet: translation-items-v2"
+516,general-fullscreen,general,,,,"general-fullscreen
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+517,general-repeat-instructions,general,,,,"general-repeat-instructions
+
+Sheet: translation-items-v2"
+518,general-keyboard-instructions,general,,,,"general-keyboard-instructions
+
+Sheet: translation-items-v2"
+519,intro-finished,general,,,,"intro-finished
+
+Sheet: translation-items-v2"
+520,general-exit,general,,,,"general-exit
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+521,task-completion,general,,,,"task-completion
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+522,matrix-reasoning-instruct1,matrix-reasoning,,,,"matrix-reasoning-instruct1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+523,matrix-reasoning-instruct2,matrix-reasoning,,,,"matrix-reasoning-instruct2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+524,matrix-reasoning-prompt1,matrix-reasoning,,,,"matrix-reasoning-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+525,mental-rotation,mental-rotation,,,,"mental-rotation
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+526,mental-rotation-training-instruct2,mental-rotation,,,,"mental-rotation-training-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+527,mental-rotation-training-instruct3,mental-rotation,,,,"mental-rotation-training-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+528,mental-rotation-test-instruct4,mental-rotation,,,,"mental-rotation-test-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+529,mental-rotation-instruct-3D,mental-rotation,,,,"mental-rotation-instruct-3D
+
+Sheet: translation-items-v2"
+530,mental-rotation-prompt2,mental-rotation,,,,"mental-rotation-prompt2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+531,mental-rotation-prompt1,mental-rotation,,,,"mental-rotation-prompt1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+532,math-instructions1,math,,,,"math-instructions1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+533,number-comparison-prompt1,math,,,,"number-comparison-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+534,number-comparison-prompt2,math,,,,"number-comparison-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+535,number-identification-prompt1,math,,,,"number-identification-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+536,missing-number-prompt1,math,,,,"missing-number-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+537,missing-number-prompt2,math,,,,"missing-number-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+538,addition-prompt1,math,,,,"addition-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+539,addition-prompt2,math,,,,"addition-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+540,subtraction-prompt1,math,,,,"subtraction-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+541,subtraction-prompt2,math,,,,"subtraction-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+542,multiplication-prompt1,math,,,,"multiplication-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+543,multiplication-prompt2,math,,,,"multiplication-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+544,number-line-instruct1,math,,,,"number-line-instruct1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+545,number-line-prompt1,math,,,,"number-line-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+546,number-line-slider-prompt1,math,,,,"number-line-slider-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+547,number-identification-1,math,,,,"number-identification-1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+548,number-identification-2,math,,,,"number-identification-2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+549,number-identification-3,math,,,,"number-identification-3
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+550,number-identification-4,math,,,,"number-identification-4
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+551,number-identification-5,math,,,,"number-identification-5
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+552,number-identification-6,math,,,,"number-identification-6
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+553,number-identification-7,math,,,,"number-identification-7
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+554,number-identification-8,math,,,,"number-identification-8
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+555,number-identification-9,math,,,,"number-identification-9
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+556,number-identification-10,math,,,,"number-identification-10
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+557,number-identification-11,math,,,,"number-identification-11
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+558,number-identification-12,math,,,,"number-identification-12
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+559,number-identification-13,math,,,,"number-identification-13
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+560,number-identification-14,math,,,,"number-identification-14
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+561,number-identification-15,math,,,,"number-identification-15
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+562,number-identification-16,math,,,,"number-identification-16
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+563,number-identification-17,math,,,,"number-identification-17
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+564,number-identification-18,math,,,,"number-identification-18
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+565,number-identification-19,math,,,,"number-identification-19
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+566,number-identification-20,math,,,,"number-identification-20
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+567,number-identification-21,math,,,,"number-identification-21
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+568,trog-instruct1,trog,,,,"trog-instruct1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+569,trog-prompt1,trog,,,,"trog-prompt1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+570,trog-prompt2,trog,,,,"trog-prompt2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+571,trog-prompt3,trog,,,,"trog-prompt3
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+572,trog-item-1,trog,,,,"trog-item-1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+573,trog-item-2,trog,,,,"trog-item-2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+574,trog-item-3,trog,,,,"trog-item-3
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+575,trog-item-4,trog,,,,"trog-item-4
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+576,trog-item-5,trog,,,,"trog-item-5
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+577,trog-item-6,trog,,,,"trog-item-6
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+578,trog-item-7,trog,,,,"trog-item-7
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+579,trog-item-8,trog,,,,"trog-item-8
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+580,trog-item-9,trog,,,,"trog-item-9
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+581,trog-item-10,trog,,,,"trog-item-10
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+582,trog-item-11,trog,,,,"trog-item-11
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+583,trog-item-12,trog,,,,"trog-item-12
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+584,trog-item-13,trog,,,,"trog-item-13
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+585,trog-item-14,trog,,,,"trog-item-14
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+586,trog-item-15,trog,,,,"trog-item-15
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+587,trog-item-16,trog,,,,"trog-item-16
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+588,trog-item-17,trog,,,,"trog-item-17
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+589,trog-item-18,trog,,,,"trog-item-18
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+590,trog-item-19,trog,,,,"trog-item-19
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+591,trog-item-20,trog,,,,"trog-item-20
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+592,trog-item-21,trog,,,,"trog-item-21
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+593,trog-item-22,trog,,,,"trog-item-22
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+594,trog-item-23,trog,,,,"trog-item-23
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+595,trog-item-24,trog,,,,"trog-item-24
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+596,trog-item-25,trog,,,,"trog-item-25
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+597,trog-item-26,trog,,,,"trog-item-26
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+598,trog-item-27,trog,,,,"trog-item-27
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+599,trog-item-28,trog,,,,"trog-item-28
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+600,trog-item-29,trog,,,,"trog-item-29
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+601,trog-item-30,trog,,,,"trog-item-30
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+602,trog-item-31,trog,,,,"trog-item-31
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+603,trog-item-32,trog,,,,"trog-item-32
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+604,trog-item-33,trog,,,,"trog-item-33
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+605,trog-item-34,trog,,,,"trog-item-34
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+606,trog-item-35,trog,,,,"trog-item-35
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+607,trog-item-36,trog,,,,"trog-item-36
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+608,trog-item-37,trog,,,,"trog-item-37
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+609,trog-item-38,trog,,,,"trog-item-38
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+610,trog-item-39,trog,,,,"trog-item-39
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+611,trog-item-40,trog,,,,"trog-item-40
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+612,trog-item-41,trog,,,,"trog-item-41
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+613,trog-item-42,trog,,,,"trog-item-42
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+614,trog-item-43,trog,,,,"trog-item-43
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+615,trog-item-44,trog,,,,"trog-item-44
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+616,trog-item-45,trog,,,,"trog-item-45
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+617,trog-item-46,trog,,,,"trog-item-46
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+618,trog-item-47,trog,,,,"trog-item-47
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+619,trog-item-48,trog,,,,"trog-item-48
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+620,trog-item-49,trog,,,,"trog-item-49
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+621,trog-item-50,trog,,,,"trog-item-50
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+622,trog-item-51,trog,,,,"trog-item-51
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+623,trog-item-52,trog,,,,"trog-item-52
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+624,trog-item-53,trog,,,,"trog-item-53
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+625,trog-item-54,trog,,,,"trog-item-54
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+626,trog-item-55,trog,,,,"trog-item-55
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+627,trog-item-56,trog,,,,"trog-item-56
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+628,trog-item-57,trog,,,,"trog-item-57
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+629,trog-item-58,trog,,,,"trog-item-58
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+630,trog-item-59,trog,,,,"trog-item-59
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+631,trog-item-60,trog,,,,"trog-item-60
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+632,trog-item-61,trog,,,,"trog-item-61
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+633,trog-item-62,trog,,,,"trog-item-62
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+634,trog-item-63,trog,,,,"trog-item-63
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+635,trog-item-64,trog,,,,"trog-item-64
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+636,trog-item-65,trog,,,,"trog-item-65
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+637,trog-item-66,trog,,,,"trog-item-66
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+638,trog-item-67,trog,,,,"trog-item-67
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+639,trog-item-68,trog,,,,"trog-item-68
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+640,trog-item-69,trog,,,,"trog-item-69
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+641,trog-item-70,trog,,,,"trog-item-70
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+642,trog-item-71,trog,,,,"trog-item-71
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+643,trog-item-72,trog,,,,"trog-item-72
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+644,trog-item-73,trog,,,,"trog-item-73
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+645,trog-item-74,trog,,,,"trog-item-74
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+646,trog-item-75,trog,,,,"trog-item-75
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+647,trog-item-76,trog,,,,"trog-item-76
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+648,trog-item-77,trog,,,,"trog-item-77
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+649,trog-item-78,trog,,,,"trog-item-78
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+650,trog-item-79,trog,,,,"trog-item-79
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+651,trog-item-80,trog,,,,"trog-item-80
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+652,trog-item-81,trog,,,,"trog-item-81
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+653,trog-item-82,trog,,,,"trog-item-82
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+654,trog-item-83,trog,,,,"trog-item-83
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+655,trog-item-84,trog,,,,"trog-item-84
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+656,trog-item-85,trog,,,,"trog-item-85
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+657,trog-item-86,trog,,,,"trog-item-86
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+658,trog-item-87,trog,,,,"trog-item-87
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+659,trog-item-88,trog,,,,"trog-item-88
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+660,trog-item-89,trog,,,,"trog-item-89
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+661,trog-item-90,trog,,,,"trog-item-90
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+662,trog-item-91,trog,,,,"trog-item-91
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+663,trog-item-92,trog,,,,"trog-item-92
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+664,trog-item-93,trog,,,,"trog-item-93
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+665,trog-item-94,trog,,,,"trog-item-94
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+666,trog-item-95,trog,,,,"trog-item-95
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+667,trog-item-96,trog,,,,"trog-item-96
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+668,trog-item-97,trog,,,,"trog-item-97
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+669,trog-item-98,trog,,,,"trog-item-98
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+670,trog-item-99,trog,,,,"trog-item-99
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+671,trog-item-100,trog,,,,"trog-item-100
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+672,trog-item-101,trog,,,,"trog-item-101
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+673,trog-item-102,trog,,,,"trog-item-102
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+674,trog-item-103,trog,,,,"trog-item-103
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+675,yes,theory-of-mind,,,,"yes
+
+Sheet: translation-items-v2"
+676,no,theory-of-mind,,,,"no
+
+Sheet: translation-items-v2"
+677,happy,theory-of-mind,,,,"happy
+
+Sheet: translation-items-v2"
+678,sad,theory-of-mind,,,,"sad
+
+Sheet: translation-items-v2"
+679,angry,theory-of-mind,,,,"angry
+
+Sheet: translation-items-v2"
+680,scared,theory-of-mind,,,,"scared
+
+Sheet: translation-items-v2"
+681,calm,theory-of-mind,,,,"calm
+
+Sheet: translation-items-v2"
+682,proud,theory-of-mind,,,,"proud
+
+Sheet: translation-items-v2"
+683,disgusted,theory-of-mind,,,,"disgusted
+
+Sheet: translation-items-v2"
+684,surprised,theory-of-mind,,,,"surprised
+
+Sheet: translation-items-v2"
+685,ToM-intro,theory-of-mind,,,,"ToM-intro
+
+Sheet: translation-items-v2"
+686,ToM-transition,theory-of-mind,,,,"ToM-transition
+
+Sheet: translation-items-v2"
+687,ToM-scene1-instruct1,theory-of-mind,,,,"ToM-scene1-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+688,ToM-scene1-instruct2,theory-of-mind,,,,"ToM-scene1-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+689,ToM-scene1-instruct3,theory-of-mind,,,,"ToM-scene1-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+690,ToM-scene1-q1-false_belief,theory-of-mind,,,,"ToM-scene1-q1-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+691,chair,theory-of-mind,,,,"chair
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+692,rug,theory-of-mind,,,,"rug
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+693,ToM-scene1-q2-reality_check,theory-of-mind,,,,"ToM-scene1-q2-reality_check
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+694,ToM-scene2-instruct1,theory-of-mind,,,,"ToM-scene2-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+695,ToM-scene2-instruct2,theory-of-mind,,,,"ToM-scene2-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+696,ToM-scene2-instruct3,theory-of-mind,,,,"ToM-scene2-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+697,ToM-scene2-q1-false_belief,theory-of-mind,,,,"ToM-scene2-q1-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+698,shelf,theory-of-mind,,,,"shelf
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+699,coats,theory-of-mind,,,,"coats
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+700,ToM-scene2-instruct4,theory-of-mind,,,,"ToM-scene2-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+701,ToM-scene2-q2-emotion_reasoning,theory-of-mind,,,,"ToM-scene2-q2-emotion_reasoning
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+702,ToM-scene2-q7-emotion_reasoning,theory-of-mind,,,,"ToM-scene2-q7-emotion_reasoning
+
+Sheet: translation-items-v2"
+703,ToM-scene2-q3-false_belief,theory-of-mind,,,,"ToM-scene2-q3-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+704,ToM-scene2-q4-false_belief,theory-of-mind,,,,"ToM-scene2-q4-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+705,ToM-scene2-q5-reality_check,theory-of-mind,,,,"ToM-scene2-q5-reality_check
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+706,ToM-scene2-q6-reality_check,theory-of-mind,,,,"ToM-scene2-q6-reality_check
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+707,ToM-scene3-instruct1,theory-of-mind,,,,"ToM-scene3-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+708,ToM-scene3-instruct2,theory-of-mind,,,,"ToM-scene3-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+709,ToM-scene3-instruct3,theory-of-mind,,,,"ToM-scene3-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+710,ToM-scene3-instruct4,theory-of-mind,,,,"ToM-scene3-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+711,ToM-scene3-q1,theory-of-mind,,,,"ToM-scene3-q1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+712,fountain,theory-of-mind,,,,"fountain
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+713,tree,theory-of-mind,,,,"tree
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+714,ToM-scene3-q2-false_belief,theory-of-mind,,,,"ToM-scene3-q2-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+715,ToM-scene3-q2-reality_check,theory-of-mind,,,,"ToM-scene3-q2-reality_check
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+716,behind-fountain,theory-of-mind,,,,"behind-fountain
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+717,behind-tree,theory-of-mind,,,,"behind-tree
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+718,ToM-scene3-q3-emotion_reasoning,theory-of-mind,,,,"ToM-scene3-q3-emotion_reasoning
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+719,ToM-scene4-instruct1,theory-of-mind,,,,"ToM-scene4-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+720,ToM-scene4-instruct2,theory-of-mind,,,,"ToM-scene4-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+721,ToM-scene4-q1-emotion_reasoning,theory-of-mind,,,,"ToM-scene4-q1-emotion_reasoning
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+722,ToM-scene4-q8-emotion_reasoning,theory-of-mind,,,,"ToM-scene4-q8-emotion_reasoning
+
+Sheet: translation-items-v2"
+723,ToM-scene4-instruct3,theory-of-mind,,,,"ToM-scene4-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+724,ToM-scene4-instruct4,theory-of-mind,,,,"ToM-scene4-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+725,ToM-scene4-q2,theory-of-mind,,,,"ToM-scene4-q2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+726,ToM-scene4-q3,theory-of-mind,,,,"ToM-scene4-q3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+727,ToM-scene4-q4-false_belief,theory-of-mind,,,,"ToM-scene4-q4-false_belief
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+728,ToM-scene4-instruct5,theory-of-mind,,,,"ToM-scene4-instruct5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+729,ToM-scene4-q5,theory-of-mind,,,,"ToM-scene4-q5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+730,ToM-scene4-q6,theory-of-mind,,,,"ToM-scene4-q6
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+731,ToM-scene4-q7,theory-of-mind,,,,"ToM-scene4-q7
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+732,ToM-scene4-instruct6,theory-of-mind,,,,"ToM-scene4-instruct6
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+733,ToM-scene5-instruct1,theory-of-mind,,,,"ToM-scene5-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+734,ToM-scene5-instruct2,theory-of-mind,,,,"ToM-scene5-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+735,ToM-scene5-q1,theory-of-mind,,,,"ToM-scene5-q1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+736,ToM-scene5-q2-reality_check,theory-of-mind,,,,"ToM-scene5-q2-reality_check
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+737,small_cup,theory-of-mind,,,,"small_cup
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+738,medium_cup,theory-of-mind,,,,"medium_cup
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+739,large_cup,theory-of-mind,,,,"large_cup
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+740,ToM-scene5-q3-emotion_reasoning,theory-of-mind,,,,"ToM-scene5-q3-emotion_reasoning
+
+Sheet: translation-items-v2"
+741,ToM-scene5-q4-emotion_reasoning,theory-of-mind,,,,"ToM-scene5-q4-emotion_reasoning
+
+Sheet: translation-items-v2"
+742,ToM-scene6-instruct1,theory-of-mind,,,,"ToM-scene6-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+743,ToM-scene6-instruct2,theory-of-mind,,,,"ToM-scene6-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+744,ToM-scene6-q1,theory-of-mind,,,,"ToM-scene6-q1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+745,ToM-scene6-instruct3,theory-of-mind,,,,"ToM-scene6-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+746,ToM-scene6-q2,theory-of-mind,,,,"ToM-scene6-q2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+747,ToM-scene6-q3,theory-of-mind,,,,"ToM-scene6-q3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+748,shoes,theory-of-mind,,,,"shoes
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+749,socks,theory-of-mind,,,,"socks
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+750,shirts,theory-of-mind,,,,"shirts
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+751,ToM-scene6-instruct4,theory-of-mind,,,,"ToM-scene6-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+752,ToM-scene6-q4,theory-of-mind,,,,"ToM-scene6-q4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+753,ToM-scene6-instruct5,theory-of-mind,,,,"ToM-scene6-instruct5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+754,ToM-scene6-q5,theory-of-mind,,,,"ToM-scene6-q5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+755,ToM-scene6-q6,theory-of-mind,,,,"ToM-scene6-q6
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+756,ToM-scene6-instruct6,theory-of-mind,,,,"ToM-scene6-instruct6
+
+Sheet: translation-items-v2"
+757,hostile-attribution-scene1-instruct1,hostile-attribution,,,,"hostile-attribution-scene1-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+758,hostile-attribution-scene1-instruct2,hostile-attribution,,,,"hostile-attribution-scene1-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+759,hostile-attribution-scene1-q1,hostile-attribution,,,,"hostile-attribution-scene1-q1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+760,hostile-attribution-scene1-q2,hostile-attribution,,,,"hostile-attribution-scene1-q2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+761,hostile-attribution-scene1-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+762,hostile-attribution-scene1-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+763,hostile-attribution-scene1-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene1-q2-ans3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+764,hostile-attribution-scene2-instruct1,hostile-attribution,,,,"hostile-attribution-scene2-instruct1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+765,hostile-attribution-scene2-instruct2,hostile-attribution,,,,"hostile-attribution-scene2-instruct2
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+766,hostile-attribution-scene2-q1,hostile-attribution,,,,"hostile-attribution-scene2-q1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+767,hostile-attribution-scene2-q2,hostile-attribution,,,,"hostile-attribution-scene2-q2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+768,hostile-attribution-scene2-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+769,hostile-attribution-scene2-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+770,hostile-attribution-scene2-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene2-q2-ans3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+771,hostile-attribution-scene3-instruct1,hostile-attribution,,,,"hostile-attribution-scene3-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+772,hostile-attribution-scene3-instruct2,hostile-attribution,,,,"hostile-attribution-scene3-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+773,hostile-attribution-scene3-instruct3,hostile-attribution,,,,"hostile-attribution-scene3-instruct3
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+774,hostile-attribution-scene3-q1,hostile-attribution,,,,"hostile-attribution-scene3-q1
+Es-co complete, de still needs review.
+Sheet: translation-items-v2"
+775,hostile-attribution-scene3-q2,hostile-attribution,,,,"hostile-attribution-scene3-q2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+776,hostile-attribution-scene3-q2-ans1,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+777,hostile-attribution-scene3-q2-ans2,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+778,hostile-attribution-scene3-q2-ans3,hostile-attribution,,,,"hostile-attribution-scene3-q2-ans3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+779,hostile-attribution-scene1-by-accident,theory-of-mind,,,,"hostile-attribution-scene1-by-accident
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+780,hostile-attribution-scene1-on-purpose,theory-of-mind,,,,"hostile-attribution-scene1-on-purpose
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+781,hostile-attribution-scene2-by-accident,theory-of-mind,,,,"hostile-attribution-scene2-by-accident
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+782,hostile-attribution-scene2-on-purpose,theory-of-mind,,,,"hostile-attribution-scene2-on-purpose
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+783,hostile-attribution-scene3-by-accident,theory-of-mind,,,,"hostile-attribution-scene3-by-accident
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+784,hostile-attribution-scene3-on-purpose,theory-of-mind,,,,"hostile-attribution-scene3-on-purpose
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+785,am,same-different-selection,,,,"am
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+786,same-different-selection-touch-circle,same-different-selection,,,,"same-different-selection-touch-circle
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+787,same-different-selection-touch-square,same-different-selection,,,,"same-different-selection-touch-square
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+788,same-different-selection-touch-triangle,same-different-selection,,,,"same-different-selection-touch-triangle
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+789,same-different-selection-touch-star,same-different-selection,,,,"same-different-selection-touch-star
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+790,same-different-selection-touch-green,same-different-selection,,,,"same-different-selection-touch-green
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+791,same-different-selection-touch-red,same-different-selection,,,,"same-different-selection-touch-red
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+792,same-different-selection-touch-blue,same-different-selection,,,,"same-different-selection-touch-blue
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+793,same-different-selection-touch-yellow,same-different-selection,,,,"same-different-selection-touch-yellow
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+794,same-different-selection-touch-small,same-different-selection,,,,"same-different-selection-touch-small
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+795,same-different-selection-touch-medium,same-different-selection,,,,"same-different-selection-touch-medium
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+796,same-different-selection-touch-large,same-different-selection,,,,"same-different-selection-touch-large
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+797,same-different-selection-touch-white,same-different-selection,,,,"same-different-selection-touch-white
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+798,same-different-selection-touch-gray,same-different-selection,,,,"same-different-selection-touch-gray
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+799,same-different-selection-touch-black,same-different-selection,,,,"same-different-selection-touch-black
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+800,same-different-selection-touch-striped,same-different-selection,,,,"same-different-selection-touch-striped
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+801,same-different-selection-touch-1,same-different-selection,,,,"same-different-selection-touch-1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+802,same-different-selection-touch-2,same-different-selection,,,,"same-different-selection-touch-2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+803,same-different-selection-touch-3,same-different-selection,,,,"same-different-selection-touch-3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+804,same-different-selection-touch-4,same-different-selection,,,,"same-different-selection-touch-4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+805,same-different-selection-instruct2,same-different-selection,,,,"same-different-selection-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+806,same-different-selection-instruct3,same-different-selection,,,,"same-different-selection-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+807,same-different-selection-both-circles,same-different-selection,,,,"same-different-selection-both-circles
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+808,same-different-selection-both-squares,same-different-selection,,,,"same-different-selection-both-squares
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+809,same-different-selection-both-triangles,same-different-selection,,,,"same-different-selection-both-triangles
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+810,same-different-selection-both-red,same-different-selection,,,,"same-different-selection-both-red
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+811,same-different-selection-both-green,same-different-selection,,,,"same-different-selection-both-green
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+812,same-different-selection-both-yellow,same-different-selection,,,,"same-different-selection-both-yellow
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+813,same-different-selection-both-blue,same-different-selection,,,,"same-different-selection-both-blue
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+814,same-different-selection-both-small,same-different-selection,,,,"same-different-selection-both-small
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+815,same-different-selection-both-medium,same-different-selection,,,,"same-different-selection-both-medium
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+816,same-different-selection-both-large,same-different-selection,,,,"same-different-selection-both-large
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+817,sds-prompt3,same-different-selection,,,,"sds-prompt3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+818,sds-3match-prompt2,same-different-selection,,,,"sds-3match-prompt2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+819,sds-2match-prompt1,same-different-selection,,,,"sds-2match-prompt1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+820,sds-2match-prompt2,same-different-selection,,,,"sds-2match-prompt2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+821,sds-3unique-prompt1,same-different-selection,,,,"sds-3unique-prompt1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+822,sds-3unique-prompt2,same-different-selection,,,,"sds-3unique-prompt2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+823,memory-game-display,memory-game,,,,"memory-game-display
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+824,memory-game-input,memory-game,,,,"memory-game-input
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+825,memory-game-instruct1,memory-game,,,,"memory-game-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+826,memory-game-instruct2,memory-game,,,,"memory-game-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+827,memory-game-instruct3,memory-game,,,,"memory-game-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+828,memory-game-instruct4,memory-game,,,,"memory-game-instruct4
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+829,memory-game-forward-prompt,memory-game,,,,"memory-game-forward-prompt
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+830,memory-game-forward-try-again,memory-game,,,,"memory-game-forward-try-again
+
+Sheet: translation-items-v2"
+831,memory-game-instruct5,memory-game,,,,"memory-game-instruct5
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+832,memory-game-instruct7,memory-game,,,,"memory-game-instruct7
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+833,memory-game-backward-prompt,memory-game,,,,"memory-game-backward-prompt
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+834,memory-game-backward-try-again,memory-game,,,,"memory-game-backward-try-again
+
+Sheet: translation-items-v2"
+835,heart-instruct1,hearts-and-flowers,,,,"heart-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+836,heart-instruct2,hearts-and-flowers,,,,"heart-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+837,hearts-and-flowers-try-again,hearts-and-flowers,,,,"hearts-and-flowers-try-again
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+838,heart-practice-feedback1,hearts-and-flowers,,,,"heart-practice-feedback1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+839,hearts-and-flowers-practice-time,hearts-and-flowers,,,,"hearts-and-flowers-practice-time
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+840,heart-practice-feedback2,hearts-and-flowers,,,,"heart-practice-feedback2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+841,hearts-and-flowers-instruct1,hearts-and-flowers,,,,"hearts-and-flowers-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+842,hearts-and-flowers-instruct2,hearts-and-flowers,,,,"hearts-and-flowers-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+843,hearts-and-flowers-play-time,hearts-and-flowers,,,,"hearts-and-flowers-play-time
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+844,flower-instruct1,hearts-and-flowers,,,,"flower-instruct1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+845,flower-instruct2,hearts-and-flowers,,,,"flower-instruct2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+846,flower-practice-feedback1,hearts-and-flowers,,,,"flower-practice-feedback1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+847,flower-practice-feedback2,hearts-and-flowers,,,,"flower-practice-feedback2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+848,hearts-and-flowers-instruct3,hearts-and-flowers,,,,"hearts-and-flowers-instruct3
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+849,hearts-and-flowers-encourage1,hearts-and-flowers,,,,"hearts-and-flowers-encourage1
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+850,hearts-and-flowers-encourage2,hearts-and-flowers,,,,"hearts-and-flowers-encourage2
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+851,hearts-and-flowers-end,hearts-and-flowers,,,,"hearts-and-flowers-end
+Final es-co & de translation review complete
+Sheet: translation-items-v2"
+852,vocab-item-001,vocab,,,,"vocab-item-001
+
+Sheet: translation-items-v2"
+853,vocab-item-002,vocab,,,,"vocab-item-002
+
+Sheet: translation-items-v2"
+854,vocab-item-003,vocab,,,,"vocab-item-003
+
+Sheet: translation-items-v2"
+855,vocab-item-004,vocab,,,,"vocab-item-004
+
+Sheet: translation-items-v2"
+856,vocab-item-005,vocab,,,,"vocab-item-005
+
+Sheet: translation-items-v2"
+857,vocab-item-006,vocab,,,,"vocab-item-006
+
+Sheet: translation-items-v2"
+858,vocab-item-007,vocab,,,,"vocab-item-007
+
+Sheet: translation-items-v2"
+859,vocab-item-008,vocab,,,,"vocab-item-008
+
+Sheet: translation-items-v2"
+860,vocab-item-009,vocab,,,,"vocab-item-009
+
+Sheet: translation-items-v2"
+861,vocab-item-010,vocab,,,,"vocab-item-010
+
+Sheet: translation-items-v2"
+862,vocab-item-011,vocab,,,,"vocab-item-011
+
+Sheet: translation-items-v2"
+863,vocab-item-012,vocab,,,,"vocab-item-012
+
+Sheet: translation-items-v2"
+864,vocab-item-013,vocab,,,,"vocab-item-013
+
+Sheet: translation-items-v2"
+865,vocab-item-014,vocab,,,,"vocab-item-014
+
+Sheet: translation-items-v2"
+866,vocab-item-015,vocab,,,,"vocab-item-015
+
+Sheet: translation-items-v2"
+867,vocab-item-016,vocab,,,,"vocab-item-016
+
+Sheet: translation-items-v2"
+868,vocab-item-017,vocab,,,,"vocab-item-017
+
+Sheet: translation-items-v2"
+869,vocab-item-018,vocab,,,,"vocab-item-018
+
+Sheet: translation-items-v2"
+870,vocab-item-019,vocab,,,,"vocab-item-019
+
+Sheet: translation-items-v2"
+871,vocab-item-020,vocab,,,,"vocab-item-020
+
+Sheet: translation-items-v2"
+872,vocab-item-021,vocab,,,,"vocab-item-021
+
+Sheet: translation-items-v2"
+873,vocab-item-022,vocab,,,,"vocab-item-022
+
+Sheet: translation-items-v2"
+874,vocab-item-023,vocab,,,,"vocab-item-023
+
+Sheet: translation-items-v2"
+875,vocab-item-024,vocab,,,,"vocab-item-024
+
+Sheet: translation-items-v2"
+876,vocab-item-025,vocab,,,,"vocab-item-025
+
+Sheet: translation-items-v2"
+877,vocab-item-026,vocab,,,,"vocab-item-026
+
+Sheet: translation-items-v2"
+878,vocab-item-027,vocab,,,,"vocab-item-027
+
+Sheet: translation-items-v2"
+879,vocab-item-028,vocab,,,,"vocab-item-028
+
+Sheet: translation-items-v2"
+880,vocab-item-029,vocab,,,,"vocab-item-029
+
+Sheet: translation-items-v2"
+881,vocab-item-030,vocab,,,,"vocab-item-030
+
+Sheet: translation-items-v2"
+882,vocab-item-031,vocab,,,,"vocab-item-031
+
+Sheet: translation-items-v2"
+883,vocab-item-032,vocab,,,,"vocab-item-032
+
+Sheet: translation-items-v2"
+884,vocab-item-033,vocab,,,,"vocab-item-033
+
+Sheet: translation-items-v2"
+885,vocab-item-034,vocab,,,,"vocab-item-034
+
+Sheet: translation-items-v2"
+886,vocab-item-035,vocab,,,,"vocab-item-035
+
+Sheet: translation-items-v2"
+887,vocab-item-036,vocab,,,,"vocab-item-036
+
+Sheet: translation-items-v2"
+888,vocab-item-037,vocab,,,,"vocab-item-037
+
+Sheet: translation-items-v2"
+889,vocab-item-038,vocab,,,,"vocab-item-038
+
+Sheet: translation-items-v2"
+890,vocab-item-039,vocab,,,,"vocab-item-039
+
+Sheet: translation-items-v2"
+891,vocab-item-040,vocab,,,,"vocab-item-040
+
+Sheet: translation-items-v2"
+892,vocab-item-041,vocab,,,,"vocab-item-041
+
+Sheet: translation-items-v2"
+893,vocab-item-042,vocab,,,,"vocab-item-042
+
+Sheet: translation-items-v2"
+894,vocab-item-043,vocab,,,,"vocab-item-043
+
+Sheet: translation-items-v2"
+895,vocab-item-044,vocab,,,,"vocab-item-044
+
+Sheet: translation-items-v2"
+896,vocab-item-045,vocab,,,,"vocab-item-045
+
+Sheet: translation-items-v2"
+897,vocab-item-046,vocab,,,,"vocab-item-046
+
+Sheet: translation-items-v2"
+898,vocab-item-047,vocab,,,,"vocab-item-047
+
+Sheet: translation-items-v2"
+899,vocab-item-048,vocab,,,,"vocab-item-048
+
+Sheet: translation-items-v2"
+900,vocab-item-049,vocab,,,,"vocab-item-049
+
+Sheet: translation-items-v2"
+901,vocab-item-050,vocab,,,,"vocab-item-050
+
+Sheet: translation-items-v2"
+902,vocab-item-051,vocab,,,,"vocab-item-051
+
+Sheet: translation-items-v2"
+903,vocab-item-052,vocab,,,,"vocab-item-052
+
+Sheet: translation-items-v2"
+904,vocab-item-053,vocab,,,,"vocab-item-053
+
+Sheet: translation-items-v2"
+905,vocab-item-054,vocab,,,,"vocab-item-054
+
+Sheet: translation-items-v2"
+906,vocab-item-055,vocab,,,,"vocab-item-055
+
+Sheet: translation-items-v2"
+907,vocab-item-056,vocab,,,,"vocab-item-056
+
+Sheet: translation-items-v2"
+908,vocab-item-057,vocab,,,,"vocab-item-057
+
+Sheet: translation-items-v2"
+909,vocab-item-058,vocab,,,,"vocab-item-058
+
+Sheet: translation-items-v2"
+910,vocab-item-059,vocab,,,,"vocab-item-059
+
+Sheet: translation-items-v2"
+911,vocab-item-060,vocab,,,,"vocab-item-060
+
+Sheet: translation-items-v2"
+912,vocab-item-061,vocab,,,,"vocab-item-061
+
+Sheet: translation-items-v2"
+913,vocab-item-062,vocab,,,,"vocab-item-062
+
+Sheet: translation-items-v2"
+914,vocab-item-063,vocab,,,,"vocab-item-063
+
+Sheet: translation-items-v2"
+915,vocab-item-064,vocab,,,,"vocab-item-064
+
+Sheet: translation-items-v2"
+916,vocab-item-065,vocab,,,,"vocab-item-065
+
+Sheet: translation-items-v2"
+917,vocab-item-066,vocab,,,,"vocab-item-066
+
+Sheet: translation-items-v2"
+918,vocab-item-067,vocab,,,,"vocab-item-067
+
+Sheet: translation-items-v2"
+919,vocab-item-068,vocab,,,,"vocab-item-068
+
+Sheet: translation-items-v2"
+920,vocab-item-069,vocab,,,,"vocab-item-069
+
+Sheet: translation-items-v2"
+921,vocab-item-070,vocab,,,,"vocab-item-070
+
+Sheet: translation-items-v2"
+922,vocab-item-071,vocab,,,,"vocab-item-071
+
+Sheet: translation-items-v2"
+923,vocab-item-072,vocab,,,,"vocab-item-072
+
+Sheet: translation-items-v2"
+924,vocab-item-073,vocab,,,,"vocab-item-073
+
+Sheet: translation-items-v2"
+925,vocab-item-074,vocab,,,,"vocab-item-074
+
+Sheet: translation-items-v2"
+926,vocab-item-075,vocab,,,,"vocab-item-075
+
+Sheet: translation-items-v2"
+927,vocab-item-076,vocab,,,,"vocab-item-076
+
+Sheet: translation-items-v2"
+928,vocab-item-077,vocab,,,,"vocab-item-077
+
+Sheet: translation-items-v2"
+929,vocab-item-078,vocab,,,,"vocab-item-078
+
+Sheet: translation-items-v2"
+930,vocab-item-079,vocab,,,,"vocab-item-079
+
+Sheet: translation-items-v2"
+931,vocab-item-080,vocab,,,,"vocab-item-080
+
+Sheet: translation-items-v2"
+932,vocab-item-081,vocab,,,,"vocab-item-081
+
+Sheet: translation-items-v2"
+933,vocab-item-082,vocab,,,,"vocab-item-082
+
+Sheet: translation-items-v2"
+934,vocab-item-083,vocab,,,,"vocab-item-083
+
+Sheet: translation-items-v2"
+935,vocab-item-084,vocab,,,,"vocab-item-084
+
+Sheet: translation-items-v2"
+936,vocab-item-085,vocab,,,,"vocab-item-085
+
+Sheet: translation-items-v2"
+937,vocab-item-086,vocab,,,,"vocab-item-086
+
+Sheet: translation-items-v2"
+938,vocab-item-087,vocab,,,,"vocab-item-087
+
+Sheet: translation-items-v2"
+939,vocab-item-088,vocab,,,,"vocab-item-088
+
+Sheet: translation-items-v2"
+940,vocab-item-089,vocab,,,,"vocab-item-089
+
+Sheet: translation-items-v2"
+941,vocab-item-090,vocab,,,,"vocab-item-090
+
+Sheet: translation-items-v2"
+942,vocab-item-091,vocab,,,,"vocab-item-091
+
+Sheet: translation-items-v2"
+943,vocab-item-092,vocab,,,,"vocab-item-092
+
+Sheet: translation-items-v2"
+944,vocab-item-093,vocab,,,,"vocab-item-093
+
+Sheet: translation-items-v2"
+945,vocab-item-094,vocab,,,,"vocab-item-094
+
+Sheet: translation-items-v2"
+946,vocab-item-095,vocab,,,,"vocab-item-095
+
+Sheet: translation-items-v2"
+947,vocab-item-096,vocab,,,,"vocab-item-096
+
+Sheet: translation-items-v2"
+948,vocab-item-097,vocab,,,,"vocab-item-097
+
+Sheet: translation-items-v2"
+949,vocab-item-098,vocab,,,,"vocab-item-098
+
+Sheet: translation-items-v2"
+950,vocab-item-099,vocab,,,,"vocab-item-099
+
+Sheet: translation-items-v2"
+951,vocab-item-100,vocab,,,,"vocab-item-100
+
+Sheet: translation-items-v2"
+952,vocab-item-101,vocab,,,,"vocab-item-101
+
+Sheet: translation-items-v2"
+953,vocab-item-102,vocab,,,,"vocab-item-102
+
+Sheet: translation-items-v2"
+954,vocab-item-103,vocab,,,,"vocab-item-103
+
+Sheet: translation-items-v2"
+955,vocab-item-104,vocab,,,,"vocab-item-104
+
+Sheet: translation-items-v2"
+956,vocab-item-105,vocab,,,,"vocab-item-105
+
+Sheet: translation-items-v2"
+957,vocab-item-106,vocab,,,,"vocab-item-106
+
+Sheet: translation-items-v2"
+958,vocab-item-107,vocab,,,,"vocab-item-107
+
+Sheet: translation-items-v2"
+959,vocab-item-108,vocab,,,,"vocab-item-108
+
+Sheet: translation-items-v2"
+960,vocab-item-109,vocab,,,,"vocab-item-109
+
+Sheet: translation-items-v2"
+961,vocab-item-110,vocab,,,,"vocab-item-110
+
+Sheet: translation-items-v2"
+962,vocab-item-111,vocab,,,,"vocab-item-111
+
+Sheet: translation-items-v2"
+963,vocab-item-112,vocab,,,,"vocab-item-112
+
+Sheet: translation-items-v2"
+964,vocab-item-113,vocab,,,,"vocab-item-113
+
+Sheet: translation-items-v2"
+965,vocab-item-114,vocab,,,,"vocab-item-114
+
+Sheet: translation-items-v2"
+966,vocab-item-115,vocab,,,,"vocab-item-115
+
+Sheet: translation-items-v2"
+967,vocab-item-116,vocab,,,,"vocab-item-116
+
+Sheet: translation-items-v2"
+968,vocab-item-117,vocab,,,,"vocab-item-117
+
+Sheet: translation-items-v2"
+969,vocab-item-118,vocab,,,,"vocab-item-118
+
+Sheet: translation-items-v2"
+970,vocab-item-119,vocab,,,,"vocab-item-119
+
+Sheet: translation-items-v2"
+971,vocab-item-120,vocab,,,,"vocab-item-120
+
+Sheet: translation-items-v2"
+972,vocab-item-121,vocab,,,,"vocab-item-121
+
+Sheet: translation-items-v2"
+973,vocab-item-122,vocab,,,,"vocab-item-122
+
+Sheet: translation-items-v2"
+974,vocab-item-123,vocab,,,,"vocab-item-123
+
+Sheet: translation-items-v2"
+975,vocab-item-124,vocab,,,,"vocab-item-124
+
+Sheet: translation-items-v2"
+976,vocab-item-125,vocab,,,,"vocab-item-125
+
+Sheet: translation-items-v2"
+977,vocab-item-126,vocab,,,,"vocab-item-126
+
+Sheet: translation-items-v2"
+978,vocab-item-127,vocab,,,,"vocab-item-127
+
+Sheet: translation-items-v2"
+979,vocab-item-128,vocab,,,,"vocab-item-128
+
+Sheet: translation-items-v2"
+980,vocab-item-129,vocab,,,,"vocab-item-129
+
+Sheet: translation-items-v2"
+981,vocab-item-130,vocab,,,,"vocab-item-130
+
+Sheet: translation-items-v2"
+982,vocab-item-131,vocab,,,,"vocab-item-131
+
+Sheet: translation-items-v2"
+983,vocab-item-132,vocab,,,,"vocab-item-132
+
+Sheet: translation-items-v2"
+984,vocab-item-133,vocab,,,,"vocab-item-133
+
+Sheet: translation-items-v2"
+985,vocab-item-134,vocab,,,,"vocab-item-134
+
+Sheet: translation-items-v2"
+986,vocab-item-135,vocab,,,,"vocab-item-135
+
+Sheet: translation-items-v2"
+987,vocab-item-136,vocab,,,,"vocab-item-136
+
+Sheet: translation-items-v2"
+988,vocab-item-137,vocab,,,,"vocab-item-137
+
+Sheet: translation-items-v2"
+989,vocab-item-138,vocab,,,,"vocab-item-138
+
+Sheet: translation-items-v2"
+990,vocab-item-139,vocab,,,,"vocab-item-139
+
+Sheet: translation-items-v2"
+991,vocab-item-140,vocab,,,,"vocab-item-140
+
+Sheet: translation-items-v2"
+992,vocab-item-141,vocab,,,,"vocab-item-141
+
+Sheet: translation-items-v2"
+993,vocab-item-142,vocab,,,,"vocab-item-142
+
+Sheet: translation-items-v2"
+994,vocab-item-143,vocab,,,,"vocab-item-143
+
+Sheet: translation-items-v2"
+995,vocab-item-144,vocab,,,,"vocab-item-144
+
+Sheet: translation-items-v2"
+996,vocab-item-145,vocab,,,,"vocab-item-145
+
+Sheet: translation-items-v2"
+997,vocab-item-146,vocab,,,,"vocab-item-146
+
+Sheet: translation-items-v2"
+998,vocab-item-147,vocab,,,,"vocab-item-147
+
+Sheet: translation-items-v2"
+999,vocab-item-148,vocab,,,,"vocab-item-148
+
+Sheet: translation-items-v2"
+1000,vocab-item-149,vocab,,,,"vocab-item-149
+
+Sheet: translation-items-v2"
+1001,vocab-item-150,vocab,,,,"vocab-item-150
+
+Sheet: translation-items-v2"
+1002,vocab-item-151,vocab,,,,"vocab-item-151
+
+Sheet: translation-items-v2"
+1003,vocab-item-152,vocab,,,,"vocab-item-152
+
+Sheet: translation-items-v2"
+1004,vocab-item-153,vocab,,,,"vocab-item-153
+
+Sheet: translation-items-v2"
+1005,vocab-item-154,vocab,,,,"vocab-item-154
+
+Sheet: translation-items-v2"
+1006,vocab-item-155,vocab,,,,"vocab-item-155
+
+Sheet: translation-items-v2"
+1007,vocab-item-156,vocab,,,,"vocab-item-156
+
+Sheet: translation-items-v2"
+1008,vocab-item-157,vocab,,,,"vocab-item-157
+
+Sheet: translation-items-v2"
+1009,vocab-item-158,vocab,,,,"vocab-item-158
+
+Sheet: translation-items-v2"
+1010,vocab-item-159,vocab,,,,"vocab-item-159
+
+Sheet: translation-items-v2"
+1011,vocab-item-160,vocab,,,,"vocab-item-160
+
+Sheet: translation-items-v2"
+1012,vocab-item-161,vocab,,,,"vocab-item-161
+
+Sheet: translation-items-v2"
+1013,vocab-item-162,vocab,,,,"vocab-item-162
+
+Sheet: translation-items-v2"
+1014,vocab-item-163,vocab,,,,"vocab-item-163
+
+Sheet: translation-items-v2"
+1015,vocab-item-164,vocab,,,,"vocab-item-164
+
+Sheet: translation-items-v2"
+1016,vocab-item-165,vocab,,,,"vocab-item-165
+
+Sheet: translation-items-v2"
+1017,vocab-item-166,vocab,,,,"vocab-item-166
+
+Sheet: translation-items-v2"
+1018,vocab-item-167,vocab,,,,"vocab-item-167
+
+Sheet: translation-items-v2"
+1019,vocab-item-168,vocab,,,,"vocab-item-168
+
+Sheet: translation-items-v2"
+1020,vocab-item-169,vocab,,,,"vocab-item-169
+
+Sheet: translation-items-v2"
+1021,vocab-item-170,vocab,,,,"vocab-item-170
+
+Sheet: translation-items-v2"
+1022,vocab-instruct-1,vocab,,,,"vocab-instruct-1
+
+Sheet: translation-items-v2"
+1023,vocab-practice-1,vocab,,,,"vocab-practice-1
+
+Sheet: translation-items-v2"
+1024,vocab-instruct-2,vocab,,,,"vocab-instruct-2
+
+Sheet: translation-items-v2"
+1025,vocab-instruct-3,vocab,,,,"vocab-instruct-3
+
+Sheet: translation-items-v2"
+1026,shared-intro-devices,trog,,,,"shared-intro-devices
+
+Sheet: translation-items-v2"
+1027,shared-choose-picture-press-arrow,trog,,,,"shared-choose-picture-press-arrow
+
+Sheet: translation-items-v2"
+1028,shared-intro-replay,trog,,,,"shared-intro-replay
+
+Sheet: translation-items-v2"
+1029,trog-instr1-matching,trog,,,,"trog-instr1-matching
+
+Sheet: translation-items-v2"
+1030,ChildSurveyIntro,survey,,,,"ChildSurveyIntro
+
+Sheet: translation-items-v2"
+1031,Example1Comic,survey,,,,"Example1Comic
+
+Sheet: translation-items-v2"
+1032,Example2Neat,survey,,,,"Example2Neat
+
+Sheet: translation-items-v2"
+1033,TeacherNice,survey,,,,"TeacherNice
+
+Sheet: translation-items-v2"
+1034,TeacherLike,survey,,,,"TeacherLike
+
+Sheet: translation-items-v2"
+1035,TeacherListen,survey,,,,"TeacherListen
+
+Sheet: translation-items-v2"
+1036,SchoolFun,survey,,,,"SchoolFun
+
+Sheet: translation-items-v2"
+1037,SchoolEnjoy,survey,,,,"SchoolEnjoy
+
+Sheet: translation-items-v2"
+1038,SchoolHappy,survey,,,,"SchoolHappy
+
+Sheet: translation-items-v2"
+1039,SchoolSafe,survey,,,,"SchoolSafe
+
+Sheet: translation-items-v2"
+1040,ClassFriends,survey,,,,"ClassFriends
+
+Sheet: translation-items-v2"
+1041,ClassHelp,survey,,,,"ClassHelp
+
+Sheet: translation-items-v2"
+1042,ClassPlay,survey,,,,"ClassPlay
+
+Sheet: translation-items-v2"
+1043,ClassNice,survey,,,,"ClassNice
+
+Sheet: translation-items-v2"
+1044,LonelySchool,survey,,,,"LonelySchool
+
+Sheet: translation-items-v2"
+1045,LearningGood,survey,,,,"LearningGood
+
+Sheet: translation-items-v2"
+1046,SchoolGiveUp,survey,,,,"SchoolGiveUp
+
+Sheet: translation-items-v2"
+1047,ReadingEnjoy,survey,,,,"ReadingEnjoy
+
+Sheet: translation-items-v2"
+1048,MathEnjoy,survey,,,,"MathEnjoy
+
+Sheet: translation-items-v2"
+1049,ReadingGood,survey,,,,"ReadingGood
+
+Sheet: translation-items-v2"
+1050,MathGood,survey,,,,"MathGood
+
+Sheet: translation-items-v2"
+1051,GrowthMindSmart,survey,,,,"GrowthMindSmart
+
+Sheet: translation-items-v2"
+1052,GrowthMindRead,survey,,,,"GrowthMindRead
+
+Sheet: translation-items-v2"
+1053,GrowthMindMath,survey,,,,"GrowthMindMath
+
+Sheet: translation-items-v2"
+1054,ChildSurveyRespoonses,survey,,,,"ChildSurveyRespoonses
+
+Sheet: translation-items-v2"
+1055,ToM-scene7-instruct1,,,,,"ToM-scene7-instruct1
+
+Sheet: translation-items-v2"
+1056,ToM-scene7-instruct2,,,,,"ToM-scene7-instruct2
+
+Sheet: translation-items-v2"
+1057,ToM-scene7-instruct3,,,,,"ToM-scene7-instruct3
+
+Sheet: translation-items-v2"
+1058,ToM-scene7-q1-false_belief,,,,,"ToM-scene7-q1-false_belief
+
+Sheet: translation-items-v2"
+1059,ToM-scene7-q2-reality_check,,,,,"ToM-scene7-q2-reality_check
+
+Sheet: translation-items-v2"
+1060,ToM-scene8-instruct1,,,,,"ToM-scene8-instruct1
+
+Sheet: translation-items-v2"
+1061,ToM-scene8-instruct2,,,,,"ToM-scene8-instruct2
+
+Sheet: translation-items-v2"
+1062,ToM-scene8-instruct3,,,,,"ToM-scene8-instruct3
+
+Sheet: translation-items-v2"
+1063,ToM-scene8-q1-false_belief,,,,,"ToM-scene8-q1-false_belief
+
+Sheet: translation-items-v2"
+1064,top,,,,,"top
+
+Sheet: translation-items-v2"
+1065,behind,,,,,"behind
+
+Sheet: translation-items-v2"
+1066,ToM-scene-8-instruct4,,,,,"ToM-scene-8-instruct4
+
+Sheet: translation-items-v2"
+1067,ToM-scene-8-q2-emotion_reasoning,,,,,"ToM-scene-8-q2-emotion_reasoning
+
+Sheet: translation-items-v2"
+1068,ToM-scene-8-q3-emotion_reasoning,,,,,"ToM-scene-8-q3-emotion_reasoning
+
+Sheet: translation-items-v2"
+1069,ToM-scene-8-q4-false_belief,,,,,"ToM-scene-8-q4-false_belief
+
+Sheet: translation-items-v2"
+1070,ToM-scene-8-q5-false_belief,,,,,"ToM-scene-8-q5-false_belief
+
+Sheet: translation-items-v2"
+1071,ToM-scene-8-q6-reality_check,,,,,"ToM-scene-8-q6-reality_check
+
+Sheet: translation-items-v2"
+1072,ToM-scene-8-q7-reality_check,,,,,"ToM-scene-8-q7-reality_check
+
+Sheet: translation-items-v2"
+1073,ToM-scene-9-instruct1,,,,,"ToM-scene-9-instruct1
+
+Sheet: translation-items-v2"
+1074,ToM-scene-9-instruct2,,,,,"ToM-scene-9-instruct2
+
+Sheet: translation-items-v2"
+1075,ToM-scene-9-q1-reality_check,,,,,"ToM-scene-9-q1-reality_check
+
+Sheet: translation-items-v2"
+1076,hill,,,,,"hill
+
+Sheet: translation-items-v2"
+1077,cup,,,,,"cup
+
+Sheet: translation-items-v2"
+1078,ToM-scene-9-q2-false_belief,,,,,"ToM-scene-9-q2-false_belief
+
+Sheet: translation-items-v2"
+1079,ToM-scene-9-q3-reality_check,,,,,"ToM-scene-9-q3-reality_check
+
+Sheet: translation-items-v2"
+1080,hillsbook,,,,,"hillsbook
+
+Sheet: translation-items-v2"
+1081,cupbook,,,,,"cupbook
+
+Sheet: translation-items-v2"
+1082,ToM-scene-9-q4-emotion_reasoning,,,,,"ToM-scene-9-q4-emotion_reasoning
+
+Sheet: translation-items-v2"
+1083,ToM-scene-10-instruct1,,,,,"ToM-scene-10-instruct1
+
+Sheet: translation-items-v2"
+1084,ToM-scene-10-instruct2,,,,,"ToM-scene-10-instruct2
+
+Sheet: translation-items-v2"
+1085,ToM-scene-10-q1-emotion_reasoning,,,,,"ToM-scene-10-q1-emotion_reasoning
+
+Sheet: translation-items-v2"
+1086,ToM-scene-10-q2-emotion_reasoning,,,,,"ToM-scene-10-q2-emotion_reasoning
+
+Sheet: translation-items-v2"
+1087,ToM-scene-10-instruct3,,,,,"ToM-scene-10-instruct3
+
+Sheet: translation-items-v2"
+1088,ToM-scene-10-q3-reality_check,,,,,"ToM-scene-10-q3-reality_check
+
+Sheet: translation-items-v2"
+1089,ToM-scene-10-q4-reality_check,,,,,"ToM-scene-10-q4-reality_check
+
+Sheet: translation-items-v2"
+1090,ToM-scene-10-instruct4,,,,,"ToM-scene-10-instruct4
+
+Sheet: translation-items-v2"
+1091,ToM-scene-10-q5-false_belief,,,,,"ToM-scene-10-q5-false_belief
+
+Sheet: translation-items-v2"
+1092,ToM-scene-10-q6-reality_check,,,,,"ToM-scene-10-q6-reality_check
+
+Sheet: translation-items-v2"
+1093,ToM-scene-11-instruct1,,,,,"ToM-scene-11-instruct1
+
+Sheet: translation-items-v2"
+1094,ToM-scene-11-instruct2,,,,,"ToM-scene-11-instruct2
+
+Sheet: translation-items-v2"
+1095,ToM-scene-11-q1-reference,,,,,"ToM-scene-11-q1-reference
+
+Sheet: translation-items-v2"
+1096,ToM-scene-11-q2-reality_check,,,,,"ToM-scene-11-q2-reality_check
+
+Sheet: translation-items-v2"
+1097,baseball,,,,,"baseball
+
+Sheet: translation-items-v2"
+1098,soccerball,,,,,"soccerball
+
+Sheet: translation-items-v2"
+1099,basketball,,,,,"basketball
+
+Sheet: translation-items-v2"
+1100,ToM-scene-11-q3-emotion_reasoning,,,,,"ToM-scene-11-q3-emotion_reasoning
+
+Sheet: translation-items-v2"
+1101,ToM-scene-11-q4-emotion_reasoning,,,,,"ToM-scene-11-q4-emotion_reasoning
+
+Sheet: translation-items-v2"
+1102,ToM-scene-12-instruct1,,,,,"ToM-scene-12-instruct1
+
+Sheet: translation-items-v2"
+1103,ToM-scene-12-instruct2,,,,,"ToM-scene-12-instruct2
+
+Sheet: translation-items-v2"
+1104,ToM-scene-12-q1-false_belief,,,,,"ToM-scene-12-q1-false_belief
+
+Sheet: translation-items-v2"
+1105,ToM-scene-12-instruct3,,,,,"ToM-scene-12-instruct3
+
+Sheet: translation-items-v2"
+1106,ToM-scene-12-q2-false_belief,,,,,"ToM-scene-12-q2-false_belief
+
+Sheet: translation-items-v2"
+1107,ToM-scene-12-q3-false_belief,,,,,"ToM-scene-12-q3-false_belief
+
+Sheet: translation-items-v2"
+1108,greenball,,,,,"greenball
+
+Sheet: translation-items-v2"
+1109,redball,,,,,"redball
+
+Sheet: translation-items-v2"
+1110,purpleball,,,,,"purpleball
+
+Sheet: translation-items-v2"
+1111,ToM-scene-12-instruct4,,,,,"ToM-scene-12-instruct4
+
+Sheet: translation-items-v2"
+1112,ToM-scene-12-q4-reality_check,,,,,"ToM-scene-12-q4-reality_check
+
+Sheet: translation-items-v2"
+1113,ToM-scene-12-q5-reality_check,,,,,"ToM-scene-12-q5-reality_check
+
+Sheet: translation-items-v2"
+1114,ToM-scene-12-instruct5,,,,,"ToM-scene-12-instruct5
+
+Sheet: translation-items-v2"
