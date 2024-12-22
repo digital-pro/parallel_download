@@ -43,8 +43,10 @@ translationData = pd.read_csv(webURL)
 
 # TBD: whether we want to write directly to the repo
 #audio_dir = "c:/levante/levante-test/audio_files/{lang_code}/"
-# for debugging
-#audio_dir = "audio_files/"
+input_file_name = 'item_bank_translations.csv'
+
+# Trying to get save files co-erced into our desired path
+audio_base_dir = "audio_files"
 
 # column edits to match what we need
 translationData = translationData.rename(columns={'identifier': 'item_id'})
@@ -84,9 +86,15 @@ not_done_only = False # try true:)
 
 # we have our input.csv and our "master.csv" -- once it is created
 # simple dropduplicates doesn't work because master.csv has real translation times
+# or maybe it doesn't need to, and we could use shortcuts:
+#   * check audio file for existence for "just new"
+#   * compare the translation column for changes
+
+
 
 playHt_tts.main(input_file_path = input_file_path, lang_code = lang_code,
-             voice=voice, changed_only = changed_only, not_done_only = not_done_only)
+             voice=voice, changed_only = changed_only, 
+             audio_base_dir = audio_base_dir, not_done_only = not_done_only)
 
 # IF we're happy with the output then
 # gsutil rsync -d -r <src> gs://<bucket> 

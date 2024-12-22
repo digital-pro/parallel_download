@@ -13,10 +13,6 @@ from datetime import datetime
 API_URL = "https://api.play.ht/api/v1/convert"
 STATUS_URL = "https://api.play.ht/api/v1/articleStatus"
 
-input_file_name = 'item_bank_translations.csv'
-
-# Trying to get save files co-erced into our desired path
-audio_base_dir = "audio_files"
 
 def create_directory(path):
     if not os.path.exists(path):
@@ -35,7 +31,7 @@ def main(
         not_done_only = False,
         output_file_path: str = None,
         item_id_column: str = 'item_id',
-        audio_dir: str = None,
+        audio_base_dir: str = None,
         # save_task_audio: str = None,  # saving audio only for specified task (e.g. 'theory-of-mind')
     ):
     """
