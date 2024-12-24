@@ -72,8 +72,9 @@ def main(
     # columnts might be:
     # item_id,labels,en,es-CO,de,context
 
-    inputData = pd.read_csv(input_file_path)
-    masterData = pd.read_csv(master_file_path)
+    inputData = pd.read_csv(input_file_path, index_col=0)
+    masterData = pd.read_csv(master_file_path, index_col=0)
+
     # to check translation status should we use translation time
     # or whether the output audio file exists?
 
@@ -139,7 +140,7 @@ def main(
                             # Write label ourRow in PD as translated?
                             # write content to masterData
                             
-                            # this doesn't work right!!
+                            # this doesn't work right!! Extra Column already added
                             masterData[lang_code] = \
                                 np.where(masterData["item_id"] == ourRow["item_id"], \
                                           ourRow[lang_code], masterData[lang_code])

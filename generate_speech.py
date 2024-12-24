@@ -40,6 +40,9 @@ webURL = "https://raw.githubusercontent.com/digital-pro/levante-audio/main/trans
 # or could read directly if no massaging needed
 translationData = pd.read_csv(webURL)
 
+### TOTALLY EXPERIMENTAL
+#translationData = translationData.drop(translationData.columns[0], axis=1)
+
 # Current export from Crowdin has columns of
 # identifier -> item_id
 # labels -> task
