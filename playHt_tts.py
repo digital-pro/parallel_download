@@ -78,17 +78,19 @@ def main(
     # or whether the output audio file exists?
 
     # build API call
+    headers = {
+        'Authorization': api_key,
+        'X-USER-ID': user_id,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+    
     for index, ourRow in inputData.iterrows():
-        # for debugging
-        #print(ourRow)
 
-        headers = {
-            'Authorization': api_key,
-            'X-USER-ID': user_id,
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
-
+        # we should potentially filter these out when we generate diffs
+        if ourRow['labels'] == float('nan'):
+            print("Item {ourRow['item_id']} doesn't have task assigned")
+            continue
         data = {
             # content needs to be an array, even if we only do one at a time
             "content" : [ourRow[lang_code]],
@@ -120,7 +122,7 @@ def main(
                 status_data = status_response.json()
 
                 if status_data["converted"] == True:
-                    print("Conversion completed successfully!")
+                    print(f"Conversion for {ourRow['item_id']} completed successfully!")
                     print(f"Audio URL: {status_data['audioUrl']}")
                     # set the download URL for retrieval or get it right here?
                     downloadURL = status_data['audioUrl']
@@ -131,42 +133,29 @@ def main(
 
                     # open file for writing
                     # Download the MP3 file
-                    if audioData.status_code == 200:
+                    if audioData.status_code == 200 and ourRow['labels'] != float('nan'):
                         with open(audio_file_path(ourRow["labels"], ourRow["item_id"]), "wb") as file:
                             file.write(audioData.content)
-                            # can we label ourRow in PD as translated?
+                            # Write label ourRow in PD as translated?
                             # write content to masterData
-
-                            ## THIS IS WRONG: index is into our "new"
-                            #  file. We want to write to the row with
-                            #  our item_id
-                            #inputData.loc[index, :] = ourRow
-                            #masterData.loc[index,lang_code] = ourRow[lang_code]
-
-                            # try this
-                            # Create a boolean mask
-                            #mask = masterData['item_id'] == ourRow["item_id"]
                             
-                            # or this
+                            # this doesn't work right!!
                             masterData[lang_code] = \
                                 np.where(masterData["item_id"] == ourRow["item_id"], \
                                           ourRow[lang_code], masterData[lang_code])
 
-                            # Apply the mask and modify the row
-                            #masterData.loc[mask, lang_code] = ourRow[lang_code]                            print(f"Conversion Finished for row: {index}")
+                            # write as we go, so erroring out doesn't lose progress
+                            # Translated, so we can save it to a master sheet
+                            masterData.to_csv("translation_master.csv")
                         break
                     else:
                         print("Failed to download the MP3 file")
-                        break
                 else:
                     # print(f"Conversion in progress. Status: {status_data['converted']}")
                     # currently most tasks complet in about 1 second, so .5 seconds
                     # seems like a good tradeoff between "over-polling" and "over-waiting"
-                    time.sleep(.1)  # Wait before checking again
+                    time.sleep(.5)  # Wait before checking again
     
-                # write as we go, so erroring out doesn't lose progress
-                # Translated, so we can save it to a master sheet
-                masterData.to_csv("translation_master.csv")
 
 if __name__ == "__main__":
     main(*sys.argv[1:])

@@ -81,7 +81,7 @@ if os.path.exists("translation_master.csv"):
 else:
     # Create a "null state" translation status file
     # so that we know what needs to be generated
-    masterData = translationData
+    masterData = translationData.copy(deep = True)
     masterData['en'] = None
     masterData['es-CO'] = None
     masterData['de'] = None
