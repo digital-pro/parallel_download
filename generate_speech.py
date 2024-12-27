@@ -1,6 +1,7 @@
 import playHt_tts
 import pandas as pd
 import os
+import numpy as np
 import csv
 import shutil
 import urllib
@@ -31,7 +32,8 @@ diff_file_name = "needed_item_bank_translations.csv"
 master_file_path = "translation_master.csv"
 
 # Raw Github URL for translations uploaded from Crowdin
-webURL = "https://raw.githubusercontent.com/digital-pro/levante-audio/main/translated.csv"
+# for debugging use the service branch, later change to main
+webURL = "https://raw.githubusercontent.com/digital-pro/levante-audio/l10n_main/translated.csv"
 
 # Turn into dataframe so we can do any needed edits
 # Pandas can now read directly from the web
@@ -74,7 +76,8 @@ translationData = translationData.rename(columns={'text': 'en'})
 # NOTE: This is the full data -- write back to our file
 
 # clean up the Sheet references in the Context column if they exist
-translationData['context'] = translationData['context'].str.replace(r'\nSheet: translation-items-v1', '', regex=True)
+# not sure we need this any more
+# translationData['context'] = translationData['context'].str.replace(r'\nSheet: translation-items-v1', '', regex=True)
 
 translationData.to_csv(input_file_name)
 
@@ -105,8 +108,41 @@ lang_code = 'es-CO'
 # We want to compare the appropriate column to see if we need to generate
 
 # Find differences in the language code column
-diffs = translationData[~translationData[lang_code].isin(masterData[lang_code])]
-diffs.to_csv(diff_file_name)
+# translationData is the exported csv from Crowdin
+# masterData is our state of generated audio files
+
+## try/catch blocks may now be moot, since we kind of know
+#  what we are doing
+
+for index, ourRow in translationData.iterrows():
+    # check to see if our lang_code is already matched 
+    # this is the language phrase we need to see if we have generated
+    translationNeeded = ourRow[lang_code]
+    item_id = ourRow['item_id']
+
+    # Find what we have generated for that phrase currently
+    try:
+        translationCurrent = masterData.loc[masterData['item_id'] == item_id, lang_code].iloc[0]
+    except:
+        translationCurrent = masterData.loc[masterData['item_id'] == item_id, lang_code][1]
+    
+    if translationCurrent == translationNeeded:
+        continue
+    
+    #translationCurrent = masterRow[lang_code][0] # why is this a series??
+    new_row = pd.DataFrame(ourRow)
+    # separate for the Nan case and the tuple case
+    try:
+        foo = len(diffData)
+        if type(translationCurrent) != 'pandas.core.series.Series':
+            diffData.loc[len(diffData)] = ourRow
+        elif (translationNeeded != translationCurrent[0]):
+            diffData.loc[len(diffData)] = ourRow
+
+        # Do something with the value
+    except NameError:
+        diffData = translationData.iloc[[index],:]     
+diffData.to_csv(diff_file_name)
 
 playHt_tts.main(input_file_path = diff_file_name, lang_code = lang_code,
              master_file_path=master_file_path, voice=voice, audio_base_dir = audio_base_dir)

@@ -89,7 +89,7 @@ def main(
     for index, ourRow in inputData.iterrows():
 
         # we should potentially filter these out when we generate diffs
-        if ourRow['labels'] == float('nan'):
+        if not (type(ourRow['labels']) == type('str')):
             print("Item {ourRow['item_id']} doesn't have task assigned")
             continue
         data = {
